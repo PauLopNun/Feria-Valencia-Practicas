@@ -1,86 +1,89 @@
 <mjml>
-    <mj-head>
-        <mj-title>Untitled</mj-title>
-        <mj-font name="AR One Sans" href="https://fonts.googleapis.com/css?family=AR+One+Sans:ital,wght@0,400;0,400;0,500;0,700" />
-        <mj-style>
-            body { background-color: #d275fc2e; }
-        </mj-style>
-    </mj-head>
-    <mj-body background-color="#d275fc2e">
-        <!-- Hero Section -->
-        <mj-section background-color="#030208" padding-top="24px" padding-bottom="0">
-            <mj-column width="100%">
-                <mj-image src="https://cloudfilesdm.com/postcards/image-17410039757450.png" width="143px" alt="" align="left" padding="0" />
-                <mj-navbar base-url="https://postcards.email/" align="right">
-                    <mj-navbar-link href="https://postcards.email/" color="#fff" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-size="16px">About</mj-navbar-link>
-                    <mj-navbar-link href="https://postcards.email/" color="#fff" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-size="16px">Blog</mj-navbar-link>
-                    <mj-navbar-link href="https://postcards.email/" color="#fff" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-size="16px">Pricing</mj-navbar-link>
-                </mj-navbar>
-                <mj-text align="center" color="#fff" font-size="64px" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-weight="500" padding-top="40px" padding-bottom="40px">
-                    We're excited to have you!
-                </mj-text>
-                <mj-image src="https://cloudfilesdm.com/postcards/image-17410039761941.png" width="600px" alt="" />
-            </mj-column>
-        </mj-section>
+  <mj-head>
+    <mj-title>Salón del Cómic de València Newsletter</mj-title>
+    <mj-font name="AR One Sans" href="https://fonts.googleapis.com/css?family=AR+One+Sans:ital,wght@0,400;0,400;0,500;0,700" />
+    <mj-style>
+      body {
+        background-color: #F1E3C8; /* Crema Suave */
+      }
+      .link-cta {
+        color: #D79C56 !important; /* Naranja Tostado para enlaces de CTA */
+        text-decoration: underline;
+        font-weight: 700;
+      }
+      .link-text {
+        color: #F1E3C8 !important; /* Crema Suave para enlaces sobre fondo oscuro */
+        text-decoration: underline;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#F1E3C8">
+    <mj-section background-color="#4F6A44" padding-top="24px" padding-bottom="0">
+      <mj-column width="100%">
+        <mj-image src="https://cloudfilesdm.com/postcards/image-17410039757450.png" width="143px" alt="" align="left" padding="0" />
+        <mj-navbar base-url="https://postcards.email/" align="right">
+          <mj-navbar-link href="https://postcards.email/" color="#F1E3C8" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-size="16px">About</mj-navbar-link>
+          <mj-navbar-link href="https://postcards.email/" color="#F1E3C8" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-size="16px">Blog</mj-navbar-link>
+          <mj-navbar-link href="https://postcards.email/" color="#F1E3C8" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-size="16px">Pricing</mj-navbar-link>
+        </mj-navbar>
+        <mj-text align="center" color="#F1E3C8" font-size="64px" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-weight="500" padding-top="40px" padding-bottom="40px">
+          We're excited to have you!
+        </mj-text>
+        <mj-image src="https://cloudfilesdm.com/postcards/image-17410039761941.png" width="600px" alt="" />
+      </mj-column>
+    </mj-section>
 
-        <!-- Getting Started -->
-        <mj-section background-color="#fff" padding="20px 0 24px 0">
-            <mj-column>
-                <mj-text align="center" color="#030208" font-size="40px" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-weight="700" padding-bottom="8px">
-                    Getting Started
-                </mj-text>
-                <mj-text align="center" color="#757479" font-size="24px" font-family="AR One Sans, Arial, Helvetica, sans-serif" padding-bottom="28px">
-                    You're now part of something great. Let's help you get the most out of your experience.
-                </mj-text>
-                <mj-button background-color="#c356f2" color="#fff" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-size="16px" font-weight="700" border-radius="100px" href="https://postcards.email/" padding-bottom="40px">
-                    START HERE
-                </mj-button>
-                <mj-image src="https://cloudfilesdm.com/postcards/image-17410039766822.png" width="600px" alt="" />
-            </mj-column>
-        </mj-section>
+    <mj-section background-color="#F1E3C8" padding="20px 0 24px 0">
+      <mj-column>
+        <mj-text align="center" color="#3C312E" font-size="40px" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-weight="700" padding-bottom="8px">
+          Getting Started
+        </mj-text>
+        <mj-text align="center" color="#8B453A" font-size="24px" font-family="AR One Sans, Arial, Helvetica, sans-serif" padding-bottom="28px">
+          You're now part of something great. Let's help you get the most out of your experience.
+        </mj-text>
+        <mj-button background-color="#D79C56" color="#F1E3C8" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-size="16px" font-weight="700" border-radius="100px" href="https://postcards.email/" padding-bottom="40px">
+          START HERE
+        </mj-button>
+        <mj-image src="https://cloudfilesdm.com/postcards/image-17410039766822.png" width="600px" alt="" />
+      </mj-column>
+    </mj-section>
 
-        <!-- Image Section -->
-        <mj-section background-color="#fff" padding="0">
-            <mj-column>
-                <mj-image src="https://cloudfilesdm.com/postcards/image-17410039771563.png" width="268px" alt="" />
-            </mj-column>
-        </mj-section>
+    <mj-section background-color="#F1E3C8" padding="0">
+      <mj-column>
+        <mj-image src="https://cloudfilesdm.com/postcards/image-17410039771563.png" width="268px" alt="" />
+      </mj-column>
+    </mj-section>
 
-        
+    <mj-section background-color="#4F6A44" background-url="https://cloudfilesdm.com/postcards/image-17410039793738.png" background-size="cover" background-repeat="no-repeat" padding="78px 0 86px 0">
+      <mj-column>
+        <mj-text align="center" color="#F1E3C8" font-size="30px" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-weight="700" padding-bottom="12px">
+          Connect with us
+        </mj-text>
+        <mj-text align="center" color="#F1E3C8" font-size="18px" font-family="AR One Sans, Arial, Helvetica, sans-serif" padding="0 140px 32px 140px">
+          If you need anything, our team is here to <a href="https://postcards.email/" class="link-text">help</a> every step of the way.
+        </mj-text>
+      </mj-column>
+    </mj-section>
 
-        <!-- Contact Support -->
-        <mj-section background-color="#030208" background-url="https://cloudfilesdm.com/postcards/image-17410039793738.png" background-size="cover" background-repeat="no-repeat" padding="78px 0 86px 0">
-            <mj-column>
-                <mj-text align="center" color="#fff" font-size="30px" font-family="AR One Sans, Arial, Helvetica, sans-serif" font-weight="700" padding-bottom="12px">
-                    Connect with us
-                </mj-text>
-                <mj-text align="center" color="#b7b6bb" font-size="18px" font-family="AR One Sans, Arial, Helvetica, sans-serif" padding="0 140px 32px 140px">
-                    If you need anything, our team is here to <a href="https://postcards.email/" style="color: #b7b6bb; text-decoration: underline;">help</a> every step of the way.
-                </mj-text>
-            </mj-column>
-        </mj-section>
+    <mj-section background-color="#4F6A44" background-url="https://cloudfilesdm.com/postcards/image-174100398048011.png" background-size="cover" background-repeat="no-repeat" padding="9px 32px 32px 32px">
+      <mj-column>
+        <mj-image src="https://cloudfilesdm.com/postcards/image-17410039797679.png" width="172px" alt="" padding-bottom="40px" />
+        <mj-image src="https://cloudfilesdm.com/postcards/image-174100398006710.png" width="534px" alt="" padding-bottom="50px" />
+        <mj-social font-family="AR One Sans, Arial, Helvetica, sans-serif" icon-size="24px" mode="horizontal" align="center" padding-bottom="24px">
+          <mj-social-element name="facebook" href="https://postcards.email/" src="https://cloudfilesdm.com/postcards/49d3df40d21a60424c3bf0f27d4ce8f9.png" />
+          <mj-social-element name="twitter" href="https://postcards.email/" src="https://cloudfilesdm.com/postcards/c9c8570037a4b4e6df17c131ae0823f9.png" />
+          <mj-social-element name="instagram" href="https://postcards.email/" src="https://cloudfilesdm.com/postcards/eb957489da997916ae7e548cb62f69a7.png" />
+        </mj-social>
+        <mj-text align="center" color="#F1E3C8" font-size="18px" font-family="AR One Sans, Arial, Helvetica, sans-serif" padding="0 70px">
+          Tailor your experience, <a href="https://postcards.email/" class="link-cta">unsubscribe</a> anytime, and explore our <a href="https://postcards.email/" class="link-cta">privacy policy</a>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
 
-        <!-- Footer -->
-        <mj-section background-color="#fff" background-url="https://cloudfilesdm.com/postcards/image-174100398048011.png" background-size="cover" background-repeat="no-repeat" padding="9px 32px 32px 32px">
-            <mj-column>
-                <mj-image src="https://cloudfilesdm.com/postcards/image-17410039797679.png" width="172px" alt="" padding-bottom="40px" />
-                <mj-image src="https://cloudfilesdm.com/postcards/image-174100398006710.png" width="534px" alt="" padding-bottom="50px" />
-                <mj-social font-family="AR One Sans, Arial, Helvetica, sans-serif" icon-size="24px" mode="horizontal" align="center" padding-bottom="24px">
-                    <mj-social-element name="facebook" href="https://postcards.email/" src="https://cloudfilesdm.com/postcards/49d3df40d21a60424c3bf0f27d4ce8f9.png" />
-                    <mj-social-element name="twitter" href="https://postcards.email/" src="https://cloudfilesdm.com/postcards/c9c8570037a4b4e6df17c131ae0823f9.png" />
-                    <mj-social-element name="instagram" href="https://postcards.email/" src="https://cloudfilesdm.com/postcards/eb957489da997916ae7e548cb62f69a7.png" />
-                </mj-social>
-                <mj-text align="center" color="#fff" font-size="18px" font-family="AR One Sans, Arial, Helvetica, sans-serif" padding="0 70px">
-                    Tailor your experience, <a href="https://postcards.email/" style="color: #c356f2; font-weight: 700; text-decoration: underline;">unsubscribe</a> anytime, and explore our <a href="https://postcards.email/" style="color: #c356f2; font-weight: 700; text-decoration: underline;">privacy policy</a>.
-                </mj-text>
-            </mj-column>
-        </mj-section>
-
-        <!-- Promo Footer -->
-        <mj-section padding="20px 0">
-            <mj-column>
-                <mj-image src="https://cloudfilesdm.com/postcards/promo-footer-dark.jpg" width="198px" alt="Made with (o -) postcards" href="https://postcards.email/?uid=MzA3OTY0&type=footer" />
-            </mj-column>
-        </mj-section>
-    </mj-body>
+    <mj-section padding="20px 0">
+      <mj-column>
+        <mj-image src="https://cloudfilesdm.com/postcards/promo-footer-dark.jpg" width="198px" alt="Made with (o -) postcards" href="https://postcards.email/?uid=MzA3OTY0&type=footer" />
+      </mj-column>
+    </mj-section>
+  </mj-body>
 </mjml>

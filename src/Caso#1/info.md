@@ -1,6 +1,15 @@
-🎨 Guía de Uso de la Paleta de Colores
+ENLACES IMÁGENES: 
+https://github.com/PauLopNun/Feria-Valencia-Practicas/raw/refs/heads/master/assets/images/facebook_logo.webp
 
-Basada en la imagen del banner, esta paleta de colores te ayudará a mantener la coherencia visual en tus newsletters:
+https://github.com/PauLopNun/Feria-Valencia-Practicas/raw/refs/heads/master/assets/images/twitter_logo.webp
+
+https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/instagram_logo.png?raw=true
+
+https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/feria_valencia_banner.jpeg?raw=true
+
+https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/salon_comic_1.png?raw=true
+
+https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/salon_comic_2.jpg?raw=true
 
     Fondo:
         Utiliza #4F6A44 (Verde Olivo Oscuro) o #F1E3C8 (Crema Suave) como base para diferentes secciones y bloques del email.
