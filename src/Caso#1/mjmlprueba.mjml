@@ -69,7 +69,7 @@
     </mj-raw>
     <mj-section background-color="#141414">
       <mj-column>
-        <mj-image alt="Feature image" href="#" src="images/image-placeholder-500x500.jpg"></mj-image>
+        <mj-image alt="Feature image" href="#" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/feria_valencia_banner.jpeg?raw=true"></mj-image>
       </mj-column>
       <mj-column>
         <mj-text font-size="22px" color="#cb4ac0" font-family="helvetica" font-weight="bold" align="left">
