@@ -37,28 +37,24 @@
     <mj-section background-color="#141414">
       <mj-column>
         <mj-raw>
-
           <!-- Welcome -->
-
         </mj-raw>
         <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
           <multiline>Salón del comic Valencia, la mejor exposición de comics en toda EspañaSalón del comoda EspañaSalón del comic Valencia, la mejor exposición de comics en toda EspañaSalón del comic Valencia, la mejor exposición de comics en toda España<br /></multiline>
         </mj-text>
-        
-        <mj-group>
-          <mj-column width="50%">
-            <mj-image alt="Feature image" href="#" src="https://www.medinadepomar.net/sites/default/files/2023-02/marvel-comic-here-come-the-heroes-i34927.jpg" width="100%" padding="16px"></mj-image>
-          </mj-column>
-          <mj-column width="50%">
-            <mj-image alt="Feature image" href="#" src="https://www.saloncomicvalencia.com/wp-content/uploads/2024/12/CARTEL_XIANNUSTUDIO_2025-1-724x1024.jpg" width="100%" padding="16px"></mj-image>
-          </mj-column>
-        </mj-group>
         <mj-raw>
-
           <!-- SECCION 1 -->
-
         </mj-raw>
       </mj-column>
+        <mj-group width="80%">
+          <mj-column>
+            <mj-image alt="Feature image" href="#" src="https://www.medinadepomar.net/sites/default/files/2023-02/marvel-comic-here-come-the-heroes-i34927.jpg" padding="16px"></mj-image>
+          </mj-column>
+          <mj-column >
+            <mj-image alt="Feature image" href="#" src="https://www.saloncomicvalencia.com/wp-content/uploads/2024/12/CARTEL_XIANNUSTUDIO_2025-1-724x1024.jpg" padding="16px"></mj-image>
+          </mj-column>
+
+        </mj-group>
     </mj-section>
     <mj-section padding="0px">
       <mj-column>
