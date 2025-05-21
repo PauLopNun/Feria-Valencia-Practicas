@@ -1,20 +1,31 @@
 <mjml>
   <mj-head>
-    <mj-style inline="inline">a { color: #bbbbbb; }</mj-style>
+    <mj-style inline="inline">
+      a {
+        color: #bbbbbb;
+      }
+    </mj-style>
   </mj-head>
-  <mj-body background-color="#000000">
+  <mj-body background-color="#4F6A44">
     <mj-section padding="5px 0 0 0">
       <mj-column>
         <mj-text font-size="11px" color="#bbbbbb" font-weight="300" padding="0px 25px">MOD. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<webversion style="color: #bbbbbb;">Web version</webversion>
         </mj-text>
       </mj-column>
     </mj-section>
+
+    <!-- Padding -->
     <mj-section padding="20px 0 0 0">
-      <mj-column>
-        <mj-image padding="0px" alt="MOD. Museum of Discovery" href="http://mod.org.au" src="images/main-feature-animated.gif"></mj-image>
-      </mj-column>
+
+
     </mj-section>
+
+    <!-- SECCION PRINCIPAL -->
+
     <mj-section background-color="#141414" padding="20px 0 0 0">
+      <mj-column width="30px">
+        <mj-image alt="Feature image" href="#" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/salon_comic_logo.png?raw=true" width="30px" height="30px" align="left" padding="0px"></mj-image>
+      </mj-column>
       <mj-column>
         <mj-text font-size="14px" line-height="22px" font-weight="bold" align="center" color="#bbbbbb"><span style="text-transform: uppercase;">
             <singleline>Heading.</singleline>
@@ -25,18 +36,17 @@
     <mj-section background-color="#141414">
       <mj-column>
         <mj-raw>
+
           <!-- Welcome -->
+
         </mj-raw>
         <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
           <multiline>Hi [salutation],<br /><br /> Welcome to MOD. a futuristic Museum of Discovery in Adelaide, Australia.</multiline>
         </mj-text>
         <mj-raw>
-          <!-- <mj-button
-						align="center"
-						background-color="#cb4ac0"
-						href="#">
-						Read more online
-					</mj-button> -->
+
+          <!-- SECCION 1 -->
+
         </mj-raw>
       </mj-column>
     </mj-section>
@@ -47,49 +57,36 @@
       </mj-column>
     </mj-section>
     <mj-raw>
-      <!-- <mj-section background-color="#141414">
-				<mj-column>
 
-					<mj-text
-						font-size="14px"
-						line-height="22px"
-						font-weight="bold"
-						align="center"
-						color="#bbbbbb">
-						<span style="text-transform: uppercase;">Feature title</span>
-					</mj-text>
+      <!-- ESPACIADO -->
 
-					<mj-divider border-color="#b3b3b3" border-width="2px" width="150px"></mj-divider>
-
-				</mj-column>
-			</mj-section> -->
     </mj-raw>
     <mj-raw>
       <repeater>
     </mj-raw>
+
+    <!-- SECCION 2 -->
+
+
     <mj-section background-color="#141414">
+      <mj-column>
+        <mj-text font-size="22px" color="#bcc" font-family="helvetica" font-weight="bold" align="right">
+          <singleline>Salon del Comic</singleline>
+        </mj-text>
+        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb" align="right">
+          <multiline>Salón del comic Valencia, la mejor exposición de comics en toda España</multeline>
+        </mj-text>
+
+        <mj-raw>
+        </mj-raw>
+      </mj-column>
       <mj-column>
         <mj-image alt="Feature image" href="#" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/feria_valencia_banner.jpeg?raw=true"></mj-image>
       </mj-column>
-      <mj-column>
-        <mj-text font-size="22px" color="#cb4ac0" font-family="helvetica" font-weight="bold" align="left">
-          <singleline>Heading title.</singleline>
-        </mj-text>
-        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
-          <multiline>Description of the feature that's going on.</multiline>
-        </mj-text>
-        <mj-image alt="Read more" href="#" width="116px" align="left" src="images/button-read-more-232px.png"></mj-image>
-        <mj-raw>
-          <!-- <mj-button
-						background-color="#cb4ac0"
-						color="#000000"
-						href="#"
-						align="left">
-						Read more
-					</mj-button> -->
-        </mj-raw>
-      </mj-column>
     </mj-section>
+
+    <!-- ESPACIADO -->
+
     <mj-section padding="0px">
       <mj-column>
         <mj-divider border-color="#1c1c1c" border-width="2px" width="99%" padding="0px"></mj-divider>
@@ -102,21 +99,29 @@
     <mj-raw>
       <repeater>
     </mj-raw>
-    <mj-section padding="0px">
-      <mj-column>
-        <mj-image padding="0px" alt="Video" href="#" src="images/video-placeholder-1000x600.jpg"></mj-image>
-      </mj-column>
-    </mj-section>
+
+    <!-- SECCION 3 -->
+
     <mj-section background-color="#141414">
       <mj-column>
-        <mj-raw>
-          <!-- Welcome -->
-        </mj-raw>
-        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
-          <multiline>Video description.</multiline>
+        <mj-image alt="Feature image" href="#" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/salon_comic_2.jpg?raw=true
+        "></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="22px" color="#bcc" font-family="helvetica" font-weight="bold" align="left">
+          <singleline>Salon del Comic</singleline>
         </mj-text>
+        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
+          <multiline>Salón del comic Valencia, la mejor exposición de comics en toda España</multiline>
+        </mj-text>
+        <mj-raw>
+
+        </mj-raw>
       </mj-column>
     </mj-section>
+
+    <!-- ESPACIADO -->
+
     <mj-section padding="0px">
       <mj-column>
         <mj-divider border-color="#1c1c1c" border-width="2px" width="99%" padding="0px"></mj-divider>
@@ -126,28 +131,33 @@
     <mj-raw>
       </repeater>
     </mj-raw>
+    <mj-raw>
+      <repeater>
+    </mj-raw>
+
     <mj-section background-color="#3d3d3d">
       <mj-column>
         <mj-raw>
           <!-- Footer left -->
         </mj-raw>
-        <mj-text padding="0px 25px" font-size="12px" font-weight="300" line-height="30px" color="#bbbbbb"><a href="https://instagram.com/MODatUniSA"><img src="images/social-instagram.png" width="25" height="25" style="width: 25px; height: 25px;" /></a>&nbsp;&nbsp; <a href="https://twitter.com/MODatUniSA"><img src="images/social-twitter.png" width="25" height="25" style="width: 25px; height: 25px;" /></a>&nbsp;&nbsp; <a href="https://www.snapchat.com/add/MODatUniSA"><img src="images/social-snapchat.png" width="25" height="25" style="width: 25px; height: 25px;" /></a>&nbsp;&nbsp; <a href="https://facebook.com/MODatUniSA"><img src="images/social-facebook.png" width="25" height="25" style="width: 25px; height: 25px;" /></a>&nbsp;&nbsp; <a href="https://github.com/MODatUniSA"><img src="images/social-github.png" width="25" height="25" style="width: 25px; height: 25px;" /></a></mj-text>
+        <mj-text padding="0px 25px" font-size="12px" font-weight="300" line-height="30px" color="#bbbbbb"><a href="https://www.instagram.com/saloncomicvalencia/"><img src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/instagram_logo.png?raw=true" width="25" height="25" style="width: 25px; height: 25px;" /></a>&nbsp;&nbsp; <a href="https://twitter.com/MODatUniSA"><img src="https://github.com/PauLopNun/Feria-Valencia-Practicas/raw/refs/heads/master/assets/images/twitter_logo.webp" width="25" height="25" style="width: 25px; height: 25px;" /></a>&nbsp;&nbsp; <a href="https://www.facebook.com/SalonComicValencia/"></a>&nbsp;&nbsp; <a href="https://facebook.com/MODatUniSA"><img src="https://github.com/PauLopNun/Feria-Valencia-Practicas/raw/refs/heads/master/assets/images/facebook_logo.webp" width="25" height="25" style="width: 25px; height: 25px;" /></asp; <a href="https://www.facebook.com/SalonComicValencia/"></a></mj-text>
         <mj-text font-size="12px" line-height="20px" font-weight="300" color="#bbbbbb">
-          <multiline>North Tce adjacent to the Morphett St Bridge, <br> Adelaide, Australia.<br>
-            <a href="mailto:mod@mod.org.au" style="color: #bbbbbb;">mod@mod.org.au</a>
+          <multiline>Centro de ayuda <br>Privacidad<br>Condiciones<br>
+            <a href="mailto:mod@mod.org.au" style="color: #bbbbbb;">saloncomicvalencia@gmail.com</a>
           </multiline>
         </mj-text>
         <mj-text font-size="12px" line-height="20px" font-weight="300" color="#bbbbbb">
-          <forwardtoafriend style="color: #bbbbbb;">Forward to a friend</forwardtoafriend><br />
-          <preferences style="color: #bbbbbb;">Update your preferences</preferences><br />
-          <unsubscribe style="color: #bbbbbb;">Unsubscribe</unsubscribe>
+          <forwardtoafriend style="color: #bbbbbb;">
+            Salon Comic Valencia, S.L. </forwardtoafriend><br />
+          <preferences style="color: #bbbbbb;">Calle lorem 21, 24523 </preferences><br />
+          <unsubscribe style="color: #bbbbbb;">Madrid, España</unsubscribe><br />
+          <unsubscribe style="color: #bbbbbb;">saloncomicvalencia.com</unsubscribe>
         </mj-text>
       </mj-column>
       <mj-column>
         <mj-raw>
           <!-- Footer right -->
         </mj-raw>
-        <mj-image align="right" padding-top="0" padding-bottom="0px" width="150px" alt="MOD. at UniSA" href="https://unisa.edu.au" src="images/mod-at-unisa-logo.png"></mj-image>
         <mj-text font-size="10px" font-weight="300" color="#bbbbbb" align="right">
           <multiline>CRICOS Provider code: 00121B</multiline>
         </mj-text>
