@@ -9,166 +9,140 @@
   <mj-body background-color="#4F6A44">
     <mj-section padding="10px 0 0 0">
       <mj-column>
-        <mj-text font-size="11px" color="#bbbbbb" font-weight="300" padding="0px 25px">Newsletter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<webversion style="color: #bbbbbb;">Salon Comic Valencia</webversion>
+        <mj-text font-size="11px" color="#bbbbbb" font-weight="300" padding="0px 25px">
+          Newsletter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<webversion style="color: #bbbbbb;">Salon Comic Valencia</webversion>
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Padding -->
-    <mj-section padding="20px 0 0 0">
-
-
-    </mj-section>
+    <mj-section padding="20px 0 0 0"></mj-section>
 
     <!-- SECCION PRINCIPAL -->
-
     <mj-section background-color="#141414" padding="0px 0 0 0">
       <mj-column width="100%" padding="10px">
-        <mj-image alt="Feature image" align="left" href="#" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/logo_salon_comic.jpg?raw=true" width="80px" align="left" padding="16px"></mj-image>
+        <mj-image alt="Feature image" align="left" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/logo_salon_comic.jpg?raw=true" width="80px" padding="16px" />
       </mj-column>
 
       <mj-column>
-        <mj-text font-size="14px" line-height="0px" font-weight="bold" align="center" color="#bbbbbb"><span style="text-transform: uppercase;">
-            <singleline>Salon comic Valencia</singleline>
-          </span></mj-text>
+        <mj-text font-size="14px" line-height="0px" font-weight="bold" align="center" color="#bbbbbb">
+          <span style="text-transform: uppercase;"><singleline>Salon comic Valencia</singleline></span>
+        </mj-text>
         <mj-divider border-color="#b3b3b3" border-width="2px" width="150px"></mj-divider>
       </mj-column>
     </mj-section>
+
     <mj-section background-color="#141414">
       <mj-column>
-        <mj-raw>
-          <!-- Welcome -->
-        </mj-raw>
         <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
-          <multiline>Salón del comic Valencia, la mejor exposición de comics en toda EspañaSalón del comoda EspañaSalón del comic Valencia, la mejor exposición de comics en toda EspañaSalón del comic Valencia, la mejor exposición de comics en toda España<br /></multiline>
+          Salón del comic Valencia, la mejor exposición de comics en toda España.
         </mj-text>
-        <mj-raw>
-          <!-- SECCION 1 -->
-        </mj-raw>
       </mj-column>
-        <mj-group width="80%">
-          <mj-column>
-            <mj-image alt="Feature image" href="#" src="https://www.medinadepomar.net/sites/default/files/2023-02/marvel-comic-here-come-the-heroes-i34927.jpg" padding="16px"></mj-image>
-          </mj-column>
-          <mj-column >
-            <mj-image alt="Feature image" href="#" src="https://www.saloncomicvalencia.com/wp-content/uploads/2024/12/CARTEL_XIANNUSTUDIO_2025-1-724x1024.jpg" padding="16px"></mj-image>
-          </mj-column>
-
-        </mj-group>
+      <mj-group width="100%">
+        <mj-column>
+          <mj-image
+            alt="Imagen 1"
+            src="https://www.medinadepomar.net/sites/default/files/2023-02/marvel-comic-here-come-the-heroes-i34927.jpg"
+            padding="16px"
+          />
+        </mj-column>
+        <mj-column>
+          <mj-image
+            alt="Imagen 2"
+            src="https://www.saloncomicvalencia.com/wp-content/uploads/2024/12/CARTEL_XIANNUSTUDIO_2025-1-724x1024.jpg"
+            padding="16px"
+          />
+        </mj-column>
+      </mj-group>
     </mj-section>
+
     <mj-section padding="0px">
       <mj-column>
         <mj-divider border-color="#1c1c1c" border-width="2px" width="99%" padding="0px"></mj-divider>
         <mj-divider border-color="#000000" border-width="2px"></mj-divider>
       </mj-column>
     </mj-section>
-    <mj-raw>
-
-      <!-- ESPACIADO -->
-
-    </mj-raw>
-    <mj-raw>
-      <repeater>
-    </mj-raw>
 
     <!-- SECCION 2 -->
-
-
     <mj-section background-color="#141414">
       <mj-column>
         <mj-text font-size="22px" color="#bcc" font-family="helvetica" font-weight="bold" align="right">
           <singleline>Salon del Comic</singleline>
         </mj-text>
         <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb" align="right">
-          <multiline>Salón del comic Valencia, la mejor exposición de comics en toda España</multeline>
+          Salón del comic Valencia, la mejor exposición de comics en toda España
         </mj-text>
-
-        <mj-raw>
-        </mj-raw>
       </mj-column>
       <mj-column>
-        <mj-image alt="Feature image" href="#" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/feria_valencia_banner.jpeg?raw=true"></mj-image>
+        <mj-image alt="Feature image" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/feria_valencia_banner.jpeg?raw=true" />
       </mj-column>
     </mj-section>
 
     <!-- ESPACIADO -->
-
     <mj-section padding="0px">
       <mj-column>
         <mj-divider border-color="#1c1c1c" border-width="2px" width="99%" padding="0px"></mj-divider>
         <mj-divider border-color="#000000" border-width="2px"></mj-divider>
       </mj-column>
     </mj-section>
-    <mj-raw>
-      </repeater>
-    </mj-raw>
-    <mj-raw>
-      <repeater>
-    </mj-raw>
 
     <!-- SECCION 3 -->
-
     <mj-section background-color="#141414">
       <mj-column>
-        <mj-image alt="Feature image" href="#" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/cabecera_salon_comic.jpg?raw=true">
-          "></mj-image>
+        <mj-image alt="Feature image" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/cabecera_salon_comic.jpg?raw=true" />
       </mj-column>
       <mj-column>
         <mj-text font-size="22px" color="#bcc" font-family="helvetica" font-weight="bold" align="left">
           <singleline>Salon del Comic</singleline>
         </mj-text>
         <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
-          <multiline>Salón del comic Valencia, la mejor exposición de comics en toda España</multiline>
+          Salón del comic Valencia, la mejor exposición de comics en toda España
         </mj-text>
-        <mj-raw>
-
-        </mj-raw>
       </mj-column>
     </mj-section>
 
     <!-- ESPACIADO -->
-
     <mj-section padding="0px">
       <mj-column>
         <mj-divider border-color="#1c1c1c" border-width="2px" width="99%" padding="0px"></mj-divider>
         <mj-divider border-color="#000000" border-width="2px"></mj-divider>
       </mj-column>
     </mj-section>
-    <mj-raw>
-      </repeater>
-    </mj-raw>
-    <mj-raw>
-      <repeater>
-    </mj-raw>
 
+    <!-- FOOTER -->
     <mj-section background-color="#3d3d3d">
       <mj-column>
-        <mj-raw>
-          <!-- Footer left -->
-        </mj-raw>
-        <mj-text padding="0px 25px" font-size="12px" font-weight="300" line-height="30px" color="#bbbbbb"><a href="https://www.instagram.com/saloncomicvalencia/"><img src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/instagram_logo.png?raw=true" width="30" height="30" style="width: 40; height 40;" /></a>&nbsp;&nbsp; <a href="https://twitter.com/MODatUniSA"><img src="https://github.com/PauLopNun/Feria-Valencia-Practicas/raw/refs/heads/master/assets/images/twitter_logo.webp" width="40" height="40" style="width: 40; height 40;" /></a>&nbsp;&nbsp; <a href="https://www.facebook.com/SalonComicValencia/"></a>&nbsp;&nbsp; <a href="https://facebook.com/MODatUniSA"><img src="https://github.com/PauLopNun/Feria-Valencia-Practicas/raw/refs/heads/master/assets/images/facebook_logo.webp" width="40" height="40" style="width: 40; height 40;" /></asp; <a href="https://www.facebook.com/SalonComicValencia/"></a></mj-text>
+        <mj-text align="left" padding="10px 25px">
+          <a href="https://www.instagram.com/saloncomicvalencia/">
+            <img src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/instagram_logo.png?raw=true" width="30" height="30" style="width: 30px; height: 30px;" />
+          </a>
+          &nbsp;&nbsp;
+          <a href="https://twitter.com/MODatUniSA">
+            <img src="https://github.com/PauLopNun/Feria-Valencia-Practicas/raw/refs/heads/master/assets/images/twitter_logo.webp" width="30" height="30" style="width: 30px; height: 30px;" />
+          </a>
+          &nbsp;&nbsp;
+          <a href="https://www.facebook.com/SalonComicValencia/">
+            <img src="https://github.com/PauLopNun/Feria-Valencia-Practicas/raw/refs/heads/master/assets/images/facebook_logo.webp" width="30" height="30" style="width: 30px; height: 30px;" />
+          </a>
+        </mj-text>
+
         <mj-text font-size="12px" line-height="20px" font-weight="300" color="#bbbbbb">
-          <multiline>Centro de ayuda <br>Privacidad<br>Condiciones<br>
-            <a href="mailto:mod@mod.org.au" style="color: #bbbbbb;">saloncomicvalencia@gmail.com</a>
-          </multiline>
+          Centro de ayuda <br>Privacidad<br>Condiciones<br>
+          <a href="mailto:mod@mod.org.au" style="color: #bbbbbb;">saloncomicvalencia@gmail.com</a>
         </mj-text>
         <mj-text font-size="12px" line-height="20px" font-weight="300" color="#bbbbbb">
-          <forwardtoafriend style="color: #bbbbbb;">
-            Salon Comic Valencia, S.L. </forwardtoafriend><br />
-          <preferences style="color: #bbbbbb;">Calle lorem 21, 24523 </preferences><br />
-          <unsubscribe style="color: #bbbbbb;">Madrid, España</unsubscribe><br />
-          <unsubscribe style="color: #bbbbbb;">saloncomicvalencia.com</unsubscribe>
+          Salon Comic Valencia, S.L.<br />
+          Calle lorem 21, 24523 <br />
+          Madrid, España<br />
+          <a href="https://saloncomicvalencia.com" style="color: #bbbbbb;">saloncomicvalencia.com</a>
         </mj-text>
       </mj-column>
       <mj-column>
-        <mj-raw>
-          <!-- Footer right -->
-        </mj-raw>
         <mj-text font-size="10px" font-weight="300" color="#bbbbbb" align="right">
           <multiline>CRICOS Provider code: 00121B</multiline>
         </mj-text>
       </mj-column>
     </mj-section>
+
     <mj-section padding="0px">
       <mj-column>
         <mj-divider border-color="#1c1c1c" border-width="2px" width="100%" padding="0px"></mj-divider>
