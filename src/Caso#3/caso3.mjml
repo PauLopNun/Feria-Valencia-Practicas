@@ -1,0 +1,146 @@
+<mjml>
+  <mj-head>
+    <mj-style inline="inline">
+      a {
+        color: #bbbbbb;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#3B4B3B">
+    <mj-section padding="10px 0 0 0">
+      <mj-column>
+        <mj-text font-size="11px" color="#bbbbbb" font-weight="300" padding="0px 25px">
+          Newsletter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<webversion style="color: #bbbbbb;">Feria Hábitat València</webversion>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px 0 0 0"></mj-section>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <mj-section background-color="#1F1F1F" padding="0px 0 0 0">
+      <mj-column width="100%" padding="10px">
+        <mj-image alt="Logo Feria Hábitat" align="left" src="https://www.feriahabitatvalencia.com/wp-content/uploads/2023/06/logo-habitat.svg" width="80px" padding="16px" />
+      </mj-column>
+
+      <mj-column>
+        <mj-text font-size="14px" line-height="0px" font-weight="bold" align="center" color="#bbbbbb">
+          <span style="text-transform: uppercase;"><singleline>Feria Hábitat València</singleline></span>
+        </mj-text>
+        <mj-divider border-color="#b3b3b3" border-width="2px" width="150px"></mj-divider>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#1F1F1F">
+      <mj-column>
+        <mj-text font-size="16px" line-height="22px" font-weight="bold" padding="0px 25px" color="#A0C49D">
+          Bienvenido al boletín de diseño e interiorismo líder en España
+        </mj-text>
+        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
+          Conoce lo último en mobiliario contemporáneo, sostenibilidad y tendencias que marcarán el futuro de la decoración.
+        </mj-text>
+      </mj-column>
+      <mj-group width="100%">
+        <mj-column>
+          <mj-image
+            alt="Imagen diseño 1"
+            src="https://www.feriahabitatvalencia.com/wp-content/uploads/2023/08/FERIA-HABITAT-VALENCIA-INTERIOR.jpg"
+            padding="16px"
+          />
+        </mj-column>
+        <mj-column>
+          <mj-image
+            alt="Imagen diseño 2"
+            src="https://www.feriahabitatvalencia.com/wp-content/uploads/2023/08/HABITAT_2023-768x576.jpg"
+            padding="16px"
+          />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section padding="0px">
+      <mj-column>
+        <mj-divider border-color="#2a2a2a" border-width="2px" width="99%" padding="0px"></mj-divider>
+        <mj-divider border-color="#000000" border-width="2px"></mj-divider>
+      </mj-column>
+    </mj-section>
+
+    <!-- NOVEDADES DESTACADAS -->
+    <mj-section background-color="#1F1F1F">
+      <mj-column>
+        <mj-text font-size="22px" color="#A0C49D" font-family="helvetica" font-weight="bold" align="right">
+          <singleline>Novedades Destacadas</singleline>
+        </mj-text>
+        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb" align="right">
+          <b>Diseño sostenible:</b> Conoce las propuestas ecológicas de marcas líderes.<br/>
+          <b>Exposición internacional:</b> Participación de diseñadores de Italia, Francia y Japón.<br/>
+          <b>Foro de interiorismo:</b> Charlas con expertos sobre espacios funcionales y belleza.
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image alt="Banner Feria Hábitat" src="https://www.feriahabitatvalencia.com/wp-content/uploads/2023/08/banner-feria-habitat-2023-1536x538.jpg" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0px">
+      <mj-column>
+        <mj-divider border-color="#2a2a2a" border-width="2px" width="99%" padding="0px"></mj-divider>
+        <mj-divider border-color="#000000" border-width="2px"></mj-divider>
+      </mj-column>
+    </mj-section>
+
+    <!-- PROMOCIONES -->
+    <mj-section background-color="#1F1F1F">
+      <mj-column>
+        <mj-image alt="Cabecera Promociones" src="https://www.feriahabitatvalencia.com/wp-content/uploads/2023/08/habitat-entrada.jpg" />
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="22px" color="#A0C49D" font-family="helvetica" font-weight="bold" align="left">
+          <singleline>Promociones Especiales</singleline>
+        </mj-text>
+        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
+          <ul style="padding-left:18px;">
+            <li>Entrada gratuita para profesionales acreditados.</li>
+            <li>Visitas guiadas por expertos en diseño.</li>
+            <li>Zona lounge VIP con acceso exclusivo.</li>
+          </ul>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0px">
+      <mj-column>
+        <mj-divider border-color="#2a2a2a" border-width="2px" width="99%" padding="0px"></mj-divider>
+        <mj-divider border-color="#000000" border-width="2px"></mj-divider>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="instagram" href="https://www.instagram.com/feriahabitatvalencia/" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></mj-social-element>
+          <mj-social-element name="twitter" href="https://twitter.com/feriahabitat" src="https://cdn-icons-png.flaticon.com/512/733/733579.png"></mj-social-element>
+          <mj-social-element name="facebook" href="https://www.facebook.com/feriahabitatvalencia/" src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></mj-social-element>
+        </mj-social>
+
+        <mj-text font-size="12px" line-height="20px" font-weight="300" color="#bbbbbb">
+          Centro de ayuda <br>Privacidad<br>Condiciones<br>
+          <a href="mailto:info@feriahabitatvalencia.com" style="color: #bbbbbb;">info@feriahabitatvalencia.com</a>
+        </mj-text>
+        <mj-text font-size="12px" line-height="20px" font-weight="300" color="#bbbbbb">
+          Feria Hábitat València<br />
+          Av. de les Fires, s/n, 46035<br />
+          Valencia, España<br />
+          <a href="https://feriahabitatvalencia.com" style="color: #bbbbbb;">feriahabitatvalencia.com</a>
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="10px" font-weight="300" color="#bbbbbb" align="right">
+          <multiline>© 2025 Feria Valencia</multiline>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0px">
+      <mj-column>
+        <mj-divider border-color="#2a2a2a" border-width="2px" width="100%" padding="0px"></mj-divider>
+        <mj-divider border-color="#000000" border-width="2px"></mj-divider>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

@@ -7,13 +7,13 @@
 
 ---
 
-## 💡 Descripción del Reto
+## Descripción del Reto
 
 El objetivo principal de este reto ha sido familiarizarnos con el lenguaje **MJML** y aplicarlo a una serie de escenarios prácticos y verosímiles. Nuestro desafío ha sido utilizar esta tecnología para diseñar correos electrónicos funcionales y atractivos, respondiendo a diversas necesidades de comunicación de la Feria Valencia y sus eventos. A través de la resolución de problemas específicos, hemos buscado consolidar nuestras habilidades en el diseño de emails responsive.
 
 ---
 
-## 🎯 Casos Prácticos Desarrollados
+## Casos Prácticos Desarrollados
 
 A continuación, se presentan los cuatro supuestos clave que hemos abordado durante estas prácticas, demostrando la versatilidad de MJML en diferentes contextos feriales:
 
@@ -32,12 +32,6 @@ Elaboración de un correo electrónico para **Expojove** destinado a sus **expos
 ### 4. Sorteo de Entradas para Feria Dos Ruedas
 
 Desarrollo de una campaña de correo para la **Feria Dos Ruedas** anunciando un **sorteo de dos entradas** para el GP de motociclismo de Cheste, incentivando a los usuarios a cumplimentar el formulario de entradas a la feria antes del 1 de septiembre.
-
----
-
-## 📸 Un Vistazo a la Experiencia
-
-Aquí podrás encontrar algunas imágenes que capturan la esencia de la Feria Valencia y el entorno en el que hemos desarrollado estas prácticas.
 
 ---
 
