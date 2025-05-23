@@ -22,8 +22,8 @@ El objetivo principal ha sido diseñar boletines informativos para distintos eve
 ### 2. Feria Dos Ruedas
 > Correo orientado a aficionados al motociclismo. Se promociona un sorteo de entradas para el GP de Cheste con una estética de competición: colores intensos, cuenta regresiva animada y CTA directo para motivar la inscripción.
 
-### 3. Fiesta y Evento Gastronómico
-> Email elegante y apetitoso para promocionar una jornada culinaria. Se destacan chefs invitados, experiencias gourmet y talleres. El diseño prioriza imágenes atractivas y colores cálidos (burdeos, crema, dorado).
+### 3. Expojove – Servicios para Expositores
+> Comunicación dirigida a los expositores de Expojove. El mensaje informa de forma clara y profesional sobre los servicios disponibles durante el evento (electricidad, limpieza, seguridad, mobiliario, etc.) y cómo solicitarlos. Se prioriza la legibilidad, estructura clara y botones para acceder a formularios y fechas límite.
 
 ### 4. Cevisama – Comunicación a Expositores
 > Comunicación profesional B2B dirigida a empresas expositoras. El diseño sobrio y corporativo comunica novedades en internacionalización, beneficios de participación y fidelización de marcas del sector cerámico y de baño.
@@ -34,13 +34,13 @@ El objetivo principal ha sido diseñar boletines informativos para distintos eve
 
 Cada campaña tiene su estilo visual específico, pero todas comparten una coherencia general basada en esta paleta:
 
-- `#4F6A44` (Verde Olivo Oscuro) – Fondos intensos
-- `#F1E3C8` (Crema Suave) – Fondos claros, legibilidad
-- `#D79C56` (Naranja Tostado) – Botones y CTA
-- `#3C312E` (Marrón Oscuro) – Texto principal
-- `#8B453A` / `#6D7D8B` – Elementos secundarios y divisores
+- `#4F6A44` (Verde Olivo Oscuro) – Fondos intensos  
+- `#F1E3C8` (Crema Suave) – Fondos claros, legibilidad  
+- `#D79C56` (Naranja Tostado) – Botones y CTA  
+- `#3C312E` (Marrón Oscuro) – Texto principal  
+- `#8B453A` / `#6D7D8B` – Elementos secundarios y divisores  
 
-Además, cada caso adapta esta paleta con tonos propios del evento: rojo y amarillo para cómic, negro y metalizado para motos, crema y burdeos para gastronomía, y azul corporativo para Cevisama.
+Además, cada caso adapta esta paleta con tonos propios del evento: rojo y amarillo para cómic, negro y metalizado para motos, verde y crema para Expojove, y azul corporativo para Cevisama.
 
 ---
 
