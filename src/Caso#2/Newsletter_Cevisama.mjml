@@ -22,6 +22,9 @@
   
   <mj-body background-color="#1A1A1A">
 
+    <mj-section padding ="20px">
+    </mj-section>
+
     <!-- Header -->
     <mj-section background-color="#0F0F0F" padding="20px 0">
       <mj-column>
