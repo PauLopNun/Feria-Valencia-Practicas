@@ -17,7 +17,13 @@
       </mj-column>
     </mj-section>
 
-    <mj-section padding="20px 0 0 0"></mj-section>
+    <mj-section padding="10px 0 10px 0">
+      <mj-column>
+        <mj-text font-size="14px" line-height="20px" font-weight="300" color="#dddddd" align="center">
+          Hola, <b>{nombre}</b>. ¡Nos alegra que estés interesado en el evento!
+        </mj-text>
+      </mj-column>
+    </mj-section>
 
     <!-- SECCION PRINCIPAL -->
     <mj-section background-color="#141414" padding="0px 0 0 0">
@@ -36,22 +42,9 @@
     </mj-section>
 
     <mj-section background-color="#141414">
-      <mj-column>
-        <mj-text font-size="16px" line-height="22px" font-weight="bold" padding="0px 25px" color="#ffcc00">
-          ¡Bienvenido al boletín del Salón del Cómic de València!
-        </mj-text>
-        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
-          Descubre las últimas noticias, invitados especiales y promociones exclusivas para los asistentes de este año.
-        </mj-text>
+      <mj-column width="50%">
+        <mj-image align="center" alt="Imagen 2" src="https://www.saloncomicvalencia.com/wp-content/uploads/2024/12/CARTEL_XIANNUSTUDIO_2025-1-724x1024.jpg" padding="16px" fluid-on-mobile="true" />
       </mj-column>
-      <mj-group width="100%">
-        <mj-column>
-          <mj-image alt="Imagen 1" src="https://www.medinadepomar.net/sites/default/files/2023-02/marvel-comic-here-come-the-heroes-i34927.jpg" padding="16px" />
-        </mj-column>
-        <mj-column>
-          <mj-image alt="Imagen 2" src="https://www.saloncomicvalencia.com/wp-content/uploads/2024/12/CARTEL_XIANNUSTUDIO_2025-1-724x1024.jpg" padding="16px" />
-        </mj-column>
-      </mj-group>
     </mj-section>
 
     <mj-section padding="0px">
@@ -104,31 +97,42 @@
       </mj-column>
     </mj-section>
 
+    <!-- Línea añadida debajo de promociones especiales -->
     <mj-section padding="0px">
       <mj-column>
         <mj-divider border-color="#1c1c1c" border-width="2px" width="99%" padding="0px"></mj-divider>
         <mj-divider border-color="#000000" border-width="2px"></mj-divider>
-        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
-          <mj-social-element name="instagram" href="https://www.instagram.com/saloncomicvalencia/" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/instagram_logo.png?raw=true"></mj-social-element>
-          <mj-social-element name="twitter" href="https://twitter.com/MODatUniSA" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/raw/refs/heads/master/assets/images/twitter_logo.webp"></mj-social-element>
-          <mj-social-element name="facebook" href="https://www.facebook.com/SalonComicValencia/" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/raw/refs/heads/master/assets/images/facebook_logo.webp"></mj-social-element>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0px">
+      <mj-column>
+        <mj-social font-size="14px" icon-size="32px" mode="horizontal" align="left" padding="16px 0">
+          <mj-social-element name="facebook" href="https://www.facebook.com/SalonComicValencia/" background-color="#3b5998">
+            Facebook
+          </mj-social-element>
+          <mj-social-element name="twitter" href="https://twitter.com/MODatUniSA" background-color="#1da1f2">
+            Twitter
+          </mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/saloncomicvalencia/" background-color="#e4405f">
+            Instagram
+          </mj-social-element>
         </mj-social>
-        </mj-text>
 
         <mj-text font-size="12px" line-height="20px" font-weight="300" color="#bbbbbb">
           Centro de ayuda <br>Privacidad<br>Condiciones<br>
-          <a href="mailto:mod@mod.org.au" style="color: #bbbbbb;">saloncomicvalencia@gmail.com</a>
+          <a href="mailto:saloncomicvalencia@gmail.com" style="color: #bbbbbb;">saloncomicvalencia@gmail.com</a>
         </mj-text>
         <mj-text font-size="12px" line-height="20px" font-weight="300" color="#bbbbbb">
-          Salon Comic Valencia, S.L.<br />
-          Calle lorem 21, 24523 <br />
-          Madrid, España<br />
+          Salón del Cómic Valencia, S.L.<br />
+          Avenida Ficticia 123, 46000 <br />
+          Valencia, España<br />
           <a href="https://saloncomicvalencia.com" style="color: #bbbbbb;">saloncomicvalencia.com</a>
         </mj-text>
       </mj-column>
       <mj-column>
         <mj-text font-size="10px" font-weight="300" color="#bbbbbb" align="right">
-          <multiline>CRICOS Provider code: 00121B</multiline>
+          <multiline>Feria Muestras Valencia - 2025</multiline>
         </mj-text>
       </mj-column>
     </mj-section>
