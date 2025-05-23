@@ -1,4 +1,4 @@
-# 🚀 Prácticas de MJML - Feria Valencia
+# Prácticas de MJML - Feria Valencia
 ![Feria_De_Muestras](https://fimma-maderalia.feriavalencia.com/wp-content/uploads/2019/02/LOGO-FERIA-VALENCIA-OK.jpg)
 
 ---
