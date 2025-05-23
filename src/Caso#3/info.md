@@ -6,9 +6,16 @@ Boletín informativo dirigido a expositores, destacando los servicios disponible
 Informar a los expositores sobre los servicios, plazos y recursos disponibles, facilitando la gestión y potenciando su experiencia en la feria.
 
 ## Estilo Visual
-- **Fondo:** #FFF8F1 (Crema Cálida)
-- **Títulos y botones:** #7B2D26 (Marrón Profundo)
-- **Acentos:** #D4AF37 (Dorado)
+
+- **Fondo principal:** #ffffff (Blanco)
+- **Encabezado y CTA:** #00adef (Azul Celeste)
+- **Subtítulos suaves:** #dff6fd (Azul Muy Claro)
+- **Bloque de bienvenida:** #fdd900 (Amarillo Vibrante)
+- **Texto general:** #333333 (Gris Oscuro)
+- **Botón CTA:** #ec008c (Magenta Intenso)
 
 ## Imágenes destacadas
-- Fotografías profesionales de stands y servicios de feria (adaptadas para expositores)
+
+- `.jpg`
+- `.jpg`
+- `.jpg`

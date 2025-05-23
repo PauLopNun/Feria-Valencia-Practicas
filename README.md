@@ -69,7 +69,6 @@ Además, cada caso adapta esta paleta con tonos propios del evento: rojo y amari
 │   └── memoria-proyecto-feria-valencia-caso4.md
 ├── .gitignore
 └── README.md
-
 ```
 <!-- añadir docs a la estructura de carpetas -->
 

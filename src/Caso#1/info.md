@@ -6,12 +6,16 @@ Campaña promocional principal del evento anual centrada en captar la atención 
 Promocionar el Salón del Cómic y sus principales actividades, destacando promociones y participación especial de invitados.
 
 ## Estilo Visual
+
 - **Fondo principal:** #4F6A44 (Verde Olivo Oscuro)
 - **Textos claros:** #F1E3C8 (Crema Suave)
 - **Títulos y CTA:** #D79C56 (Naranja Tostado)
-- **Detalles y divisores:** #6D7D8B y #8B453A
+- **Detalles y divisores:** #6D7D8B (Gris Azulado) y #8B453A (Marrón Cálido)
+- **Fondo secciones oscuras:** #141414 (Negro Profundo)
+- **Texto auxiliar:** #bbbbbb (Gris Claro)
 
 ## Imágenes destacadas
+
 - `logo_salon_comic.jpg`
 - `feria_valencia_banner.jpeg`
 - `cabecera_salon_comic.jpg`

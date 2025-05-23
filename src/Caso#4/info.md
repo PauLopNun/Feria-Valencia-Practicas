@@ -6,9 +6,15 @@ Boletín promocional de la feria dedicada a motocicletas y bicicletas, con enfoq
 Atraer al público aficionado al motor y al ciclismo, destacando actividades, expositores y beneficios exclusivos.
 
 ## Estilo Visual
-- **Fondo:** #F1E3C8 (Crema Suave)
-- **Títulos y botones:** #D79C56 (Naranja Tostado)
-- **Acentos dinámicos:** #8B453A (Marrón Rojizo)
+
+- **Fondo principal:** #1e1e1e (Negro Puro)
+- **Secciones principales:** #111111 (Gris Muy Oscuro)
+- **Títulos y CTA:** #e50914 (Rojo Intenso)
+- **Textos y enlaces:** #bbbbbb (Gris Claro)
+- **Divisores:** #1c1c1c y #000000 (Negros Profundos)
 
 ## Imágenes destacadas
-- `imagen...png` (adaptada al evento)
+
+- `.jpg`
+- `.jpg`
+- `.jpg`
