@@ -2,13 +2,14 @@
   <mj-head>
     <mj-attributes>
       <mj-all font-family="Helvetica, Arial, sans-serif" />
-<mj-text font-size="16px" color="#333333" line-height="150%" />
+      <mj-text font-size="16px" line-height="150%" />
       <mj-section padding="0" />
       <mj-column padding="0" />
     </mj-attributes>
     <mj-style inline="inline">
+      a { color: #bbbbbb; }
       .cta-button {
-        background: #0072CE;
+        background: linear-gradient(90deg, #0072CE, #DA0081);
         color: white;
         text-decoration: none;
         padding: 12px 25px;
@@ -18,51 +19,64 @@
       }
     </mj-style>
   </mj-head>
+  
+  <mj-body background-color="#1A1A1A">
 
-  <mj-body background-color="#e5e5e5">
-    
-    <!-- Header con logo -->
-    <mj-section background-color="#ffffff" padding="20px">
-      <mj-column width="100%">
-        <mj-image src="https://www.feriavalencia.com/wp-content/uploads/2020/01/cevisama-logo.jpg" alt="Cevisama" align="center" width="200px" />
+    <!-- Header -->
+    <mj-section background-color="#0F0F0F" padding="20px 0">
+      <mj-column>
+        <mj-image src="https://www.itc.uji.es/wp-content/uploads/CEVISMA.jpg" width="200px" />
       </mj-column>
     </mj-section>
 
-    <!-- Sección de introducción -->
-    <mj-section background-color="#f0f4f8" padding="40px 20px">
+    <!-- Intro con impacto -->
+    <mj-section background-color="#1F1F1F" padding="40px 20px">
       <mj-column>
-        <mj-text font-size="20px" font-weight="bold" color="#0072CE">Hola {{nombre_contacto}},</mj-text>
-        <mj-text>
-          Queremos compartir con usted las novedades de <strong>Cevisama 2025</strong>: una edición con más inversión en promoción internacional y beneficios únicos para expositores como <strong>{{empresa}}</strong>.
+        <mj-text align= "center" font-size="22px" font-weight="bold" color="#ffffff">✨ ¡Cevisama 2025 te espera, {{nombre_contacto}}! ✨</mj-text>
+        <mj-text color="#cccccc">
+          Esta edición será más internacional, más innovadora y más estratégica para empresas como <strong>{{empresa}}</strong>. No te lo puedes perder.
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Beneficios -->
-    <mj-section background-color="#ffffff" padding="30px 20px">
+    <!-- Franja colorida con mensaje -->
+    <mj-section background-color="#141414" padding="30px 0">
       <mj-column>
-        <mj-text font-size="18px" font-weight="bold" color="#222222">Beneficios exclusivos para su empresa</mj-text>
-        <mj-text>
-          ✔ Mayor alcance global gracias a nuevas alianzas internacionales.<br/>
-          ✔ Acciones promocionales destacadas para expositores B2B.<br/>
-          ✔ Atención y soporte institucional durante la feria.
+        <mj-text font-size="18px" font-weight="bold" color="#ffffff" align="center">
+          🌍 Un escaparate global para tu marca. <br/> 🚀 Una oportunidad para destacar.
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Gráfico o imagen -->
-    <mj-section background-color="#f0f0f0" padding="20px">
+    <!-- Beneficios destacados -->
+    <mj-section background-color="#1F1F1F" padding="30px 20px">
       <mj-column>
-        <mj-image src="https://via.placeholder.com/600x200?text=Gráfico+Internacionalización+Cevisama" alt="Gráfico internacionalización" />
-        <mj-text align="center" font-size="14px" color="#777777">
-          Aumento del 30% en visitantes profesionales internacionales.
+        <mj-text font-size="18px" font-weight="bold" color="#ffffff">¿Por qué exponer en Cevisama 2025?</mj-text>
+        <mj-text color="#bbbbbb">
+          ✅ Acceso a nuevos mercados y distribuidores internacionales.<br/>
+          ✅ Promoción directa entre compradores clave.<br/>
+          ✅ Soporte institucional y visibilidad garantizada.<br/>
+          ✅ Networking con los grandes del sector.
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- CTA -->
-    <mj-section background-color="#ffffff" padding="30px 20px">
+    <!-- Imagen -->
+    <mj-section background-color="#1F1F1F" padding="20px">
+      <mj-column width="95%">
+        <mj-image border-radius="6px" src="https://cevisama.feriavalencia.com/wp-content/uploads/2020/02/distribuidor-2.jpg" />
+        <mj-text align="center" font-size="14px" color="#aaaaaa">
+          Más de 90 países representados en la última edición.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA fuerte -->
+    <mj-section background-color="#0F0F0F" padding="30px 20px">
       <mj-column>
+        <mj-text font-size="18px" font-weight="bold" color="#ffffff" align="center">
+          📩 Inscribirse hoy es asegurar visibilidad mañana.
+        </mj-text>
         <mj-button href="https://cevisama.feriavalencia.com/expositores/" background-color="#0072CE" color="white" font-size="16px" border-radius="4px">
           Confirmar participación
         </mj-button>
@@ -70,16 +84,23 @@
     </mj-section>
 
     <!-- Footer -->
-    <mj-section background-color="#dbe4ec" padding="30px 20px">
+    <mj-section background-color="#1A1A1A" padding="30px 20px">
       <mj-column>
-        <mj-text font-size="14px" color="#333333" align="center">
+        <mj-text font-size="14px" color="#bbbbbb" align="center">
           Feria Valencia · Av. de les Fires, s/n · 46035 València, España<br/>
-          Contacto: <a href="mailto:info@feriavalencia.com" style="color:#0072CE;">info@feriavalencia.com</a>
+          Contacto: <a href="mailto:info@feriavalencia.com" style="color:#ffffff;">info@feriavalencia.com</a>
         </mj-text>
         <mj-social font-size="14px" icon-size="20px" mode="horizontal" align="center">
           <mj-social-element name="linkedin" href="https://www.linkedin.com/company/feria-valencia/"></mj-social-element>
           <mj-social-element name="twitter" href="https://twitter.com/FeriaValencia"></mj-social-element>
         </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- Línea inferior -->
+    <mj-section>
+      <mj-column>
+        <mj-divider border-color="#333333" border-width="1px" />
       </mj-column>
     </mj-section>
 

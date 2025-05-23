@@ -6,36 +6,26 @@
       }
     </mj-style>
   </mj-head>
+
   <mj-body background-color="#1e1e1e">
-    <mj-section padding="10px 0 0 0">
+    <mj-section>
       <mj-column>
-        <mj-text font-size="14px" line-height="20px" font-weight="bold" align="center" color="#bbbbbb">
-          <span style="text-transform: uppercase;">
-            <singleline>Feria Dos Ruedas</singleline>
-          </span>
-        </mj-text>
+        <mj-image alt="Logo Feria Dos Ruedas" src="https://dosruedas.feriavalencia.com/wp-content/uploads/2022/03/cropped-Logo_2RUEDAS_2022_150ppp-1.png" width="80px" padding="16px" />
       </mj-column>
     </mj-section>
 
-    <mj-section padding="20px 0 0 0"></mj-section>
-
-    <mj-section background-color="#000000" padding="0px 0 0 0">
-      <mj-column width="100%" padding="10px">
-        <mj-image alt="Logo Feria Dos Ruedas" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/logo_dos_ruedas.jpg?raw=true" width="80px" padding="16px" />
-      </mj-column>
-
+    <mj-section background-color="#111111" padding="20px">
       <mj-column>
         <mj-text font-size="14px" line-height="0px" font-weight="bold" align="center" color="#bbbbbb">
           <span style="text-transform: uppercase;">
             <singleline>Feria Dos Ruedas</singleline>
           </span>
         </mj-text>
-        <mj-divider border-color="#b3b3b3" border-width="2px" width="150px"></mj-divider>
+        <mj-divider border-color="#e50914" border-width="2px" width="150px"></mj-divider>
       </mj-column>
     </mj-section>
 
-    <!-- Saludo personalizado -->
-    <mj-section background-color="#000000" padding="0px 0 0 0">
+    <mj-section background-color="#111111" padding="0px">
       <mj-column>
         <mj-text align="center" font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
           Hola <strong>{{nombre}}</strong>, gracias por tu interés en la Feria Dos Ruedas.
@@ -43,9 +33,9 @@
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#000000">
-      <mj-column>
-        <mj-text font-size="16px" line-height="22px" font-weight="bold" padding="0px 25px" color="#ff9900">
+    <mj-section background-color="#111111">
+      <mj-column width="100%">
+        <mj-text font-size="20px" line-height="22px" font-weight="bold" padding="0px 25px" color="#e50914">
           ¡Bienvenido al boletín oficial de la Feria Dos Ruedas!
         </mj-text>
         <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
@@ -54,10 +44,10 @@
       </mj-column>
       <mj-group width="100%">
         <mj-column>
-          <mj-image alt="Moto deportiva" src="https://cdn.pixabay.com/photo/2016/11/29/05/08/motorcycle-1868945_960_720.jpg" padding="16px" />
+          <mj-image border-radius="3%" alt="Moto deportiva" src="https://practicas.feriavalencia.com/wp-content/uploads/2025/05/img1_2ruedas1.jpg" padding="16px" />
         </mj-column>
         <mj-column>
-          <mj-image alt="Stand Feria" src="https://cdn.pixabay.com/photo/2017/06/20/03/14/motorbike-2421623_960_720.jpg" padding="16px" />
+          <mj-image border-radius="3%" alt="Stand Feria" src="https://practicas.feriavalencia.com/wp-content/uploads/2025/05/img2_2ruedas1.jpg" padding="16px" />
         </mj-column>
       </mj-group>
     </mj-section>
@@ -69,9 +59,9 @@
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#000000">
+    <mj-section background-color="#111111">
       <mj-column>
-        <mj-text font-size="22px" color="#bcc" font-family="helvetica" font-weight="bold" align="right">
+        <mj-text font-size="22px" color="#e50914" font-family="helvetica" font-weight="bold" align="right">
           <singleline>Actividades Destacadas</singleline>
         </mj-text>
         <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb" align="right">
@@ -81,7 +71,7 @@
         </mj-text>
       </mj-column>
       <mj-column>
-        <mj-image alt="Banner Dos Ruedas" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/banner_dos_ruedas.jpg?raw=true" />
+        <mj-image border-radius="3%" alt="Stand Feria" src="https://practicas.feriavalencia.com/wp-content/uploads/2025/05/img2_2ruedas1.jpg" padding="16px" />
       </mj-column>
     </mj-section>
 
@@ -92,12 +82,12 @@
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#000000">
+    <mj-section background-color="#111111">
       <mj-column>
-        <mj-image alt="Cabecera promoción" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/promocion_dos_ruedas.jpg?raw=true" />
+        <mj-image border-radius="3%" alt="Moto deportiva" src="https://practicas.feriavalencia.com/wp-content/uploads/2025/05/img1_2ruedas1.jpg" padding="16px" />
       </mj-column>
       <mj-column>
-        <mj-text font-size="22px" color="#bcc" font-family="helvetica" font-weight="bold" align="left">
+        <mj-text font-size="22px" color="#e50914" font-family="helvetica" font-weight="bold" align="left">
           <singleline>Ofertas Exclusivas</singleline>
         </mj-text>
         <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
@@ -114,10 +104,21 @@
       <mj-column>
         <mj-divider border-color="#1c1c1c" border-width="2px" width="99%" padding="0px"></mj-divider>
         <mj-divider border-color="#000000" border-width="2px"></mj-divider>
-        <mj-social font-size="15px" icon-size="25px" mode="horizontal" align="left">
-          <mj-social-element name="instagram" href="https://www.instagram.com/feriadosruedas/" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/instagram_logo.png?raw=true"></mj-social-element>
-          <mj-social-element name="twitter" href="https://twitter.com/FeriaDosRuedas" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/raw/refs/heads/master/assets/images/twitter_logo.webp"></mj-social-element>
-          <mj-social-element name="facebook" href="https://www.facebook.com/FeriaDosRuedas" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/raw/refs/heads/master/assets/images/facebook_logo.webp"></mj-social-element>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#111111">
+      <mj-column>
+        <mj-social font-size="14px" icon-size="32px" mode="horizontal" align="left" padding="16px 0">
+          <mj-social-element name="facebook" href="https://www.facebook.com/SalonComicValencia/" background-color="#3b5998">
+            Facebook
+          </mj-social-element>
+          <mj-social-element name="twitter" href="https://twitter.com/MODatUniSA" background-color="#1da1f2">
+            Twitter
+          </mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/saloncomicvalencia/" background-color="#e4405f">
+            Instagram
+          </mj-social-element>
         </mj-social>
 
         <mj-text font-size="12px" line-height="20px" font-weight="300" color="#bbbbbb">
@@ -138,10 +139,10 @@
       </mj-column>
     </mj-section>
 
-    <mj-section padding="0px">
-      <mj-column>
-        <mj-divider border-color="#1c1c1c" border-width="2px" width="100%" padding="0px"></mj-divider>
-        <mj-divider border-color="#000000" border-width="2px"></mj-divider>
+    <!-- Línea divisoria final -->
+    <mj-section padding="2px" background-color="#111111">
+      <mj-column width="100%">
+        <mj-divider border-color="#bbbbbb" border-style="double" border-width="4px" width="100%" padding="0px" />
       </mj-column>
     </mj-section>
   </mj-body>
