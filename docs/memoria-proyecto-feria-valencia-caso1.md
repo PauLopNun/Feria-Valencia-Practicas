@@ -1,6 +1,3 @@
-## Caso 1: Salón del Cómic de València
-
-
 # Memoria del Proyecto: Campaña de Marketing Digital con MJML para Feria Valencia – Caso 1: Salón del Cómic de València
 
 ## Índice
