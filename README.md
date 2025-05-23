@@ -48,6 +48,8 @@ Además, cada caso adapta esta paleta con tonos propios del evento: rojo y amari
 
 ```plaintext
 📁 practicas-feria-valencia/
+├── 📁 assets/
+│   └── 📁 images/
 ├── 📁 caso-1/
 │   ├── info.md            
 │   └── Newsletter_Salon_Comic_Valencia.mjml         
@@ -60,7 +62,14 @@ Además, cada caso adapta esta paleta con tonos propios del evento: rojo y amari
 ├── 📁 caso-4/
 │   ├── info.md   
 │   └── Newsletter_Feria_2_Ruedas.mjml
+├── 📁 docs/
+│   ├── memoria-proyecto-feria-valencia-caso1.md
+│   ├── memoria-proyecto-feria-valencia-caso2.md
+│   ├── memoria-proyecto-feria-valencia-caso3.md
+│   └── memoria-proyecto-feria-valencia-caso4.md
+├── .gitignore
 └── README.md
+
 ```
 <!-- añadir docs a la estructura de carpetas -->
 
