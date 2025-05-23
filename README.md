@@ -1,38 +1,84 @@
-# Prácticas de MJML - Feria Valencia
-![Feria_De_Muestras](https://fimma-maderalia.feriavalencia.com/wp-content/uploads/2019/02/LOGO-FERIA-VALENCIA-OK.jpg)
+# Prácticas de MJML – Feria Valencia
+
+![Feria_De_Muestras](https://cdn1.valenciaciudaddelrunning.com/wp-content/uploads/2023/07/foto-principal-scaled.jpg)
 
 ---
 
-¡Bienvenido al repositorio de mis prácticas en la **Feria Valencia**! Este proyecto se centra en la aplicación de **MJML**, un framework responsive que simplifica la creación de correos electrónicos. A lo largo de estas prácticas, hemos explorado cómo diseñar y construir comunicaciones efectivas por correo electrónico, enfrentando desafíos reales y aplicando soluciones innovadoras.
+¡Hola! Soy Pau, y este es el repositorio donde he documentado mi trabajo individual con **MJML**, un framework potente para crear emails responsive. A lo largo de estas prácticas, he diseñado campañas de email marketing orientadas a eventos reales de **Feria Valencia**, aplicando tanto conocimientos técnicos como creatividad visual para resolver retos comunicativos específicos.
 
 ---
 
-## Descripción del Reto
+## Objetivo del Proyecto
 
-El objetivo principal de este reto ha sido familiarizarnos con el lenguaje **MJML** y aplicarlo a una serie de escenarios prácticos y verosímiles. Nuestro desafío ha sido utilizar esta tecnología para diseñar correos electrónicos funcionales y atractivos, respondiendo a diversas necesidades de comunicación de la Feria Valencia y sus eventos. A través de la resolución de problemas específicos, hemos buscado consolidar nuestras habilidades en el diseño de emails responsive.
+El objetivo principal ha sido diseñar boletines informativos para distintos eventos, aplicando MJML de forma avanzada. Cada caso parte de una necesidad realista de comunicación digital: desde informar hasta motivar la inscripción o compra de entradas. Todo ello con un enfoque responsive, accesible y visualmente atractivo.
 
 ---
 
 ## Casos Prácticos Desarrollados
 
-A continuación, se presentan los cuatro supuestos clave que hemos abordado durante estas prácticas, demostrando la versatilidad de MJML en diferentes contextos feriales:
+### 1. Salón del Cómic de València
+> Campaña dirigida a un público joven, familiar y geek. El email utiliza una estética tipo cómic, con viñetas, gifs y botones llamativos. Se enfoca en resaltar preventas, actividades especiales y contenido visualmente compartible.
 
-### 1. Boletín Informativo para Salón del Cómic de València
+### 2. Feria Dos Ruedas
+> Correo orientado a aficionados al motociclismo. Se promociona un sorteo de entradas para el GP de Cheste con una estética de competición: colores intensos, cuenta regresiva animada y CTA directo para motivar la inscripción.
 
-Creación de un **boletín informativo** dinámico y visualmente atractivo para el Salón del Cómic de València, destacando las últimas noticias, anuncios de invitados y promociones especiales para los asistentes.
+### 3. Fiesta y Evento Gastronómico
+> Email elegante y apetitoso para promocionar una jornada culinaria. Se destacan chefs invitados, experiencias gourmet y talleres. El diseño prioriza imágenes atractivas y colores cálidos (burdeos, crema, dorado).
 
-### 2. Comunicación Estratégica de Cevisama
-
-Diseño de una comunicación dirigida a los **expositores de Cevisama** para informar sobre una **gran inversión** realizada con el fin de atraer a compradores y visitantes internacionales, enfatizando el retorno de su participación.
-
-### 3. Servicios para Expositores de Expojove
-
-Elaboración de un correo electrónico para **Expojove** destinado a sus **expositores**, detallando los **servicios a los que tienen acceso** (logística, promoción, etc.) y las instrucciones claras sobre cómo solicitarlos.
-
-### 4. Sorteo de Entradas para Feria Dos Ruedas
-
-Desarrollo de una campaña de correo para la **Feria Dos Ruedas** anunciando un **sorteo de dos entradas** para el GP de motociclismo de Cheste, incentivando a los usuarios a cumplimentar el formulario de entradas a la feria antes del 1 de septiembre.
+### 4. Cevisama – Comunicación a Expositores
+> Comunicación profesional B2B dirigida a empresas expositoras. El diseño sobrio y corporativo comunica novedades en internacionalización, beneficios de participación y fidelización de marcas del sector cerámico y de baño.
 
 ---
 
-**¡Gracias por visitar nuestro repositorio!** Si tienes alguna pregunta o sugerencia, no dudes en contactar.
+## Estética y Paleta de Colores
+
+Cada campaña tiene su estilo visual específico, pero todas comparten una coherencia general basada en esta paleta:
+
+- `#4F6A44` (Verde Olivo Oscuro) – Fondos intensos
+- `#F1E3C8` (Crema Suave) – Fondos claros, legibilidad
+- `#D79C56` (Naranja Tostado) – Botones y CTA
+- `#3C312E` (Marrón Oscuro) – Texto principal
+- `#8B453A` / `#6D7D8B` – Elementos secundarios y divisores
+
+Además, cada caso adapta esta paleta con tonos propios del evento: rojo y amarillo para cómic, negro y metalizado para motos, crema y burdeos para gastronomía, y azul corporativo para Cevisama.
+
+---
+
+## Estructura del Repositorio
+
+```plaintext
+📁 practicas-feria-valencia/
+├── 📁 caso-1/
+│   ├── info.md            
+│   └── index.mjml          
+├── 📁 caso-2/
+│   ├── info.md             
+│   └── index.mjml
+├── 📁 caso-3/
+│   ├── info.md              
+│   └── index.mjml
+├── 📁 caso-4/
+│   ├── info.md   
+│   └── index.mjml
+└── README.md
+```
+
+## 💡 Tecnologías y Herramientas
+
+- **MJML**: para maquetación responsive  
+- **Outlook**: testing de compatibilidad  
+- **GitHub**: control de versiones y documentación modular  
+- **Mailjet**: pruebas reales de envío  
+
+
+---
+
+## Agradecimientos
+
+Gracias a **Feria Valencia** por ofrecer estos contextos reales y al profesorado del **IES La Sénia** por fomentar un aprendizaje basado en retos.  
+Este proyecto me ha permitido aplicar el diseño responsive en un entorno profesional, realista y desafiante.
+
+---
+
+**¡Gracias por visitar mi repositorio!**  
+Si tienes sugerencias o preguntas, no dudes en abrir un issue o contactarme.

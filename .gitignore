@@ -1,4 +1,4 @@
-# Archivos y directorios generados por MJML 
+# Archivos y directorios generados por MJML
 dist/
 *.html
 
@@ -14,3 +14,25 @@ yarn-error.log*
 
 # Entorno de desarrollo
 .vscode/
+
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de compilación temporales
+*.tmp
+*.temp
+
+# Configuración de entorno (no debe subirse nunca)
+.env
+.env.*
+
+# Archivos de backups o generados automáticamente
+*.bak
+*.swp
+*.swo
+
+# Salida de pruebas si llegas a usar testing en el futuro
+coverage/
+
+# Archivos de caché de herramientas de desarrollo
+.cache/
