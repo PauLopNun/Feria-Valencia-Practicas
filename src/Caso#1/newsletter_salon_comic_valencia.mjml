@@ -7,17 +7,17 @@
     </mj-style>
   </mj-head>
   <mj-body background-color="#4F6A44">
-    <mj-section padding="10px 0 0 0">
-      <mj-column>
-        <mj-text font-size="14px" line-height="20px" font-weight="bold" align="center" color="#bbbbbb">
-          <span style="text-transform: uppercase;">
-            <singleline>Salón del Cómic Valencia</singleline>
-          </span>
-        </mj-text>
+
+
+
+    <mj-section padding="15px 0 0 0">
+      <mj-column width="40%">
+        <mj-image alt="Feature image" align="center" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/logo_salon_comic.jpg?raw=true" padding="16px" />
       </mj-column>
+
     </mj-section>
 
-    <mj-section padding="10px 0 10px 0">
+    <mj-section padding="10px">
       <mj-column>
         <mj-text font-size="14px" line-height="20px" font-weight="300" color="#dddddd" align="center">
           Hola, <b>{nombre}</b>. ¡Nos alegra que estés interesado en el evento!
@@ -26,11 +26,7 @@
     </mj-section>
 
     <!-- SECCION PRINCIPAL -->
-    <mj-section background-color="#141414" padding="0px 0 0 0">
-      <mj-column width="100%" padding="10px">
-        <mj-image alt="Feature image" align="left" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/logo_salon_comic.jpg?raw=true" width="80px" padding="16px" />
-      </mj-column>
-
+    <mj-section background-color="#141414" padding="35px 0 0 0">
       <mj-column>
         <mj-text font-size="14px" line-height="0px" font-weight="bold" align="center" color="#bbbbbb">
           <span style="text-transform: uppercase;">
