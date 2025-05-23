@@ -73,7 +73,7 @@ Además, cada caso adapta esta paleta con tonos propios del evento: rojo y amari
 ```
 <!-- añadir docs a la estructura de carpetas -->
 
-## 💡 Tecnologías y Herramientas
+## Tecnologías y Herramientas
 
 - **MJML**: para maquetación responsive  
 - **Outlook**: testing de compatibilidad  
