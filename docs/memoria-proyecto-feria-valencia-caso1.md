@@ -113,9 +113,9 @@ Repositorio: https://github.com/PauLopNun/Feria-Valencia-Practicas
 ├── 📁 assets/
 ├── 📁 main/
 │   ├── 📁 caso-practico-1/
-│   │   ├── index.mjml
-│   │   ├── style.css
-│   │   └── comic-promo.jpg
+│   │   ├── Newsletter_Salon_Comic_Valencia.mjml
+│   │   ├── info.md
+│   │   
 │   └── ...
 └── README.md
 ```

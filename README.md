@@ -50,18 +50,19 @@ Además, cada caso adapta esta paleta con tonos propios del evento: rojo y amari
 📁 practicas-feria-valencia/
 ├── 📁 caso-1/
 │   ├── info.md            
-│   └── index.mjml          
+│   └── Newsletter_Salon_Comic_Valencia.mjml         
 ├── 📁 caso-2/
 │   ├── info.md             
-│   └── index.mjml
+│   └── Newsletter_Cevisama.mjml
 ├── 📁 caso-3/
 │   ├── info.md              
-│   └── index.mjml
+│   └── Newsletter_Expojove.mjml
 ├── 📁 caso-4/
 │   ├── info.md   
-│   └── index.mjml
+│   └── Newsletter_Feria_2_Ruedas.mjml
 └── README.md
 ```
+<!-- añadir docs a la estructura de carpetas -->
 
 ## 💡 Tecnologías y Herramientas
 

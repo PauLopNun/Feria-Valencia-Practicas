@@ -1,4 +1,4 @@
-# Memoria del Proyecto: Campaña de Marketing Digital con MJML para Feria Valencia — Caso 2
+# Memoria del Proyecto: Campaña de Marketing Digital con MJML para Feria Valencia — Caso 2: Cevisama
 
 ## Índice
 
@@ -113,8 +113,8 @@ Repositorio actualizado con ramas por supuesto y estructura modular:
 ```plaintext
 📁 practicas-feria-valencia/
 ├── 📁 caso-practico-2/
-│   ├── cevisama.mjml
-│   └── cevisama.html
+│   ├── Newsletter_Cevisama.mjml
+│   └── info.md
 ```
 
 ---

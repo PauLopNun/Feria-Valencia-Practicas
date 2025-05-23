@@ -1,4 +1,4 @@
-# Archivos y directorios generados por MJML
+# Archivos y directorios MJML
 dist/
 *.html
 
@@ -6,7 +6,7 @@ dist/
 .DS_Store
 Thumbs.db
 
-# Archivos de logs
+# logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -22,17 +22,14 @@ node_modules/
 *.tmp
 *.temp
 
-# Configuración de entorno (no debe subirse nunca)
+# Configuración de entorno 
 .env
 .env.*
 
-# Archivos de backups o generados automáticamente
+# Archivos de backups 
 *.bak
 *.swp
 *.swo
-
-# Salida de pruebas si llegas a usar testing en el futuro
-coverage/
 
 # Archivos de caché de herramientas de desarrollo
 .cache/

@@ -1,20 +1,20 @@
-# Memoria del Proyecto: Campaña de Marketing Digital con MJML para Feria Valencia — Caso 3: Fiesta y Evento Gastronómico
+# Memoria del Proyecto: Campaña de Marketing Digital con MJML para Feria Valencia — Caso 3: Comunicación de Servicios para Expositores (Expojove)
 
 ## Índice
 
 1. [Introducción y Contexto del Reto](#introducción-y-contexto-del-reto)
-2. [Caso Práctico 3: Fiesta y Evento Gastronómico](#caso-práctico-3-fiesta-y-evento-gastronómico)
+2. [Caso Práctico 3: Comunicación para Expositores de Expojove](#caso-práctico-3-comunicación-para-expositores-de-expojove)
 3. [Análisis y Planificación](#análisis-y-planificación)
    - [Público Objetivo](#público-objetivo)
    - [DAFO y Competencia](#dafo-y-competencia)
    - [Objetivos de la Campaña](#objetivos-de-la-campaña)
 4. [Diseño](#diseño)
-   - [Creatividad e Innovación](#creatividad-e-innovación)
+   - [Enfoque Visual y Funcional](#enfoque-visual-y-funcional)
    - [Mockup](#mockup)
    - [Responsive Avanzado (MJML + Media Queries)](#responsive-avanzado-mjml--media-queries)
 5. [Test con Usuarios](#test-con-usuarios)
 6. [Desarrollo y Envío de Correos](#desarrollo-y-envío-de-correos)
-7. [Integración con Redes Sociales](#integración-con-redes-sociales)
+7. [Integración con Plataformas de Gestión](#integración-con-plataformas-de-gestión)
 8. [Control de Versiones con GitHub](#control-de-versiones-con-github)
 9. [Datos y Base de Datos](#datos-y-base-de-datos)
 10. [Personalización del Correo MJML](#personalización-del-correo-mjml)
@@ -24,114 +24,130 @@
 
 ## Introducción y Contexto del Reto
 
-Este tercer caso se centra en el diseño de una newsletter para promocionar un evento gastronómico dentro del marco de Feria Valencia. Se trata de una fiesta o jornada culinaria pensada para atraer tanto al público general como a amantes de la gastronomía local e internacional.
+En este caso práctico, el reto consiste en diseñar una comunicación informativa para los expositores de **Expojove**, la feria infantil y juvenil de Feria Valencia. El objetivo es presentar de forma clara, accesible y atractiva los **servicios disponibles para expositores**, cómo acceder a ellos y los canales de solicitud.
 
-## Caso Práctico 3: Fiesta y Evento Gastronómico
+## Caso Práctico 3: Comunicación para Expositores de Expojove
 
-La campaña busca destacar los atractivos culinarios del evento, la participación de chefs reconocidos, talleres y experiencias sensoriales. Se busca un email apetecible visualmente, elegante y atractivo para un público gourmet.
+La campaña busca asegurar que todos los expositores conozcan y utilicen los servicios que la feria pone a su disposición: logística, montaje, promoción, necesidades técnicas, etc. Se diseña un email funcional y visualmente ordenado que actúe como guía práctica y útil para los participantes.
 
 ## Análisis y Planificación
 
 ### Público Objetivo
 
-- Aficionados a la gastronomía
-- Foodies, blogueros y críticos culinarios
-- Público general interesado en experiencias nuevas
-- Familias y parejas que buscan planes distintos
+- Expositores confirmados de Expojove
+- Responsables de logística y producción de los stands
+- Empresas colaboradoras
 
 ### DAFO y Competencia
 
 **Fortalezas**
-- Contenido visual muy atractivo (platos, chefs, stands)
-- Experiencia sensorial muy compartible
-- Oferta gastronómica variada y de calidad
+- Comunicación oficial desde la organización de la feria
+- Contenido de alto valor práctico y directo
+- Canal digital con seguimiento trazable
 
 **Debilidades**
-- Posible saturación si se abusa de imágenes pesadas
-- Público menos familiarizado con newsletters
+- Público empresarial con poco tiempo
+- Posible saturación de correos antes del evento
 
 **Oportunidades**
-- Aprovechar redes sociales como Instagram para visibilidad
-- Colaboración con influencers gastronómicos
+- Fidelizar expositores con una experiencia organizada y clara
+- Reducir errores o incidencias mediante información anticipada
 
 **Amenazas**
-- Competencia con festivales food truck, restaurantes o eventos similares
-- Riesgo de baja apertura si no se comunica el valor claramente
+- Desactualización de datos de contacto
+- Baja tasa de apertura si el asunto no refleja urgencia
 
 ### Objetivos de la Campaña
 
-- Despertar el interés y el apetito visual
-- Generar tráfico hacia la web de inscripción o entradas
-- Reforzar la marca del evento como cita gastronómica imprescindible
+- Informar de forma clara y rápida sobre los servicios disponibles
+- Facilitar enlaces y formularios para solicitudes
+- Mejorar la experiencia de montaje y gestión previa al evento
 
 ## Diseño
 
-### Creatividad e Innovación
+### Enfoque Visual y Funcional
 
-El diseño emplea un estilo visual sofisticado:
-- Tipografía elegante serif y sans-serif para modernidad y clase
-- Colores cálidos: burdeos, crema y dorado
-- Imágenes de platos bien presentados, chefs, ambiente de feria gourmet
+El diseño apuesta por:
+- Bloques temáticos por tipo de servicio (logística, montaje, apoyo técnico, promoción)
+- Iconografía clara y moderna
+- Tipografía sans-serif legible en todos los dispositivos
 
 ### Mockup
 
-Estructura en bloques temáticos (presentación, experiencias, chefs invitados, CTA). Basado en MJML con diseño responsivo personalizado.
+Diseño con estructura tipo guía rápida:
+- Introducción breve
+- Servicios destacados con enlaces y fechas límite
+- Datos de contacto y soporte
 
 ### Responsive Avanzado (MJML + Media Queries)
 
-- **Desktop (>1200px):** diseño en dos o tres columnas con imágenes grandes
-- **Tablet (768–1200px):** reorganización en columna única manteniendo la elegancia
-- **Móvil (<768px):** scroll vertical con prioridad visual en platos y llamadas a la acción
+- **Desktop:** presentación en dos columnas con íconos
+- **Tablet:** formato en columna única con encabezados llamativos
+- **Móvil:** scroll con accesos rápidos y botones de llamada a la acción
 
 ## Test con Usuarios
 
-- Feedback recibido de personas con perfil foodie
-- Ajuste en tipografía y colores para mejor contraste
-- Mejora de la jerarquía visual entre secciones
+- Test con expositores de años anteriores
+- Revisión de términos técnicos y claridad en CTA
+- Mejora en la visibilidad de fechas y enlaces
 
 ## Desarrollo y Envío de Correos
 
-- Compilación con MJML y test previo con Litmus
-- Envío mediante plataforma MailerLite con campos personalizados
+- Codificado en MJML
+- Test con Email on Acid
+- Envío programado a través de Mailgun
 
-## Integración con Redes Sociales
+## Integración con Plataformas de Gestión
 
-- Reels de chefs cocinando en Instagram
-- Historias con encuestas y cuenta atrás del evento
-- Colaboraciones con influencers del sector foodie
+- Enlaces a formularios de solicitud en línea
+- Integración con base de datos interna de expositores
 
 ## Control de Versiones con GitHub
 
-Repositorio común, rama específica para el caso 3:
+Repositorio específico:
 
 ```plaintext
 📁 practicas-feria-valencia/
 ├── 📁 caso-practico-3/
-│   ├── gastronomia.mjml
-│   └── gastronomia.html
+│   ├── Newsletter_Expositores_Expojove.mjml
+│   └── info.md
 ```
 
 ## Datos y Base de Datos
 
-Segmentación según afinidad culinaria: cocina local, internacional, vegana. Datos recopilados en formularios previos.
+Uso de CRM de la feria para segmentación y validación de datos. Filtrado por tipo de expositor.
 
 ## Personalización del Correo MJML
 
-Variables destacadas:
-- `{{nombre}}`
-- `{{preferencia_gastronomica}}`
+**Variables utilizadas:**
+
+- `{{empresa}}`
+- `{{nombre_contacto}}`
+- `{{plazo_respuesta}}`
 
 ## Verificación de Compatibilidad
 
-Probado en principales clientes de correo incluyendo móviles, con imágenes optimizadas y alternativas accesibles.
+Probado en clientes de correo corporativos como:
+
+- Outlook
+- Gmail
+- Thunderbird
+
+Se han optimizado imágenes y añadido textos alternativos accesibles para garantizar la compatibilidad.
 
 ## Documentación Final
 
 Incluye:
-- Cómo compilar MJML y previsualizar
-- Estructura de carpetas y modularización
-- Buenas prácticas para el diseño de emails gastronómicos
+
+- Manual para personalización de futuras ediciones
+- Listado de servicios y enlaces a recursos oficiales
+- Validación del flujo de comunicación y checklist de control
 
 ## Entrega y Defensa del Proyecto
 
-El correo fue presentado con simulación de envío y revisión en tiempo real. Preparada para entrega junto con los otros casos.
+El diseño fue presentado junto a una simulación de envío en entorno de pruebas.  
+Se valoró especialmente:
+
+- Claridad informativa
+- Funcionalidad de enlaces y llamadas a la acción
+- Escalabilidad y reutilización del diseño en próximas ediciones

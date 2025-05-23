@@ -1,14 +1,14 @@
-# Campaña Email – Feria del Vehículo de Ocasión
+# Campaña Email – Expojove
 
-Email profesional y estructurado dirigido a potenciales compradores, centrado en oportunidades y novedades del mercado automotor de ocasión.
+Boletín informativo dirigido a expositores, destacando los servicios disponibles y cómo solicitarlos para maximizar su participación.
 
 ## Objetivo
-Informar sobre las promociones, vehículos destacados y detalles logísticos de la feria.
+Informar a los expositores sobre los servicios, plazos y recursos disponibles, facilitando la gestión y potenciando su experiencia en la feria.
 
 ## Estilo Visual
-- **Fondo claro:** #F1E3C8 (Crema Suave)
-- **Texto principal:** #3C312E (Marrón Oscuro)
-- **Detalles y enlaces:** #6D7D8B (Azul Grisáceo)
+- **Fondo:** #FFF8F1 (Crema Cálida)
+- **Títulos y botones:** #7B2D26 (Marrón Profundo)
+- **Acentos:** #D4AF37 (Dorado)
 
 ## Imágenes destacadas
-- Fotografías profesionales de vehículos y planos de ubicación (no ilustradas en el repositorio por defecto).
+- Fotografías profesionales de stands y servicios de feria (adaptadas para expositores)

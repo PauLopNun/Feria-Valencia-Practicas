@@ -1,14 +1,15 @@
-# Campaña Email – Feria Dos Ruedas
+# Campaña Email – Cevisama 2025
 
-Boletín promocional de la feria dedicada a motocicletas y bicicletas, con enfoque visual potente y detalles enfocados en velocidad y estilo.
+Email dirigido a expositores para informar sobre novedades, beneficios y confirmación de participación en la feria.
 
 ## Objetivo
-Atraer al público aficionado al motor y al ciclismo, destacando actividades, expositores y beneficios exclusivos.
+Comunicar los nuevos incentivos, el aumento en la promoción internacional y facilitar la confirmación de asistencia.
 
 ## Estilo Visual
-- **Fondo:** #F1E3C8 (Crema Suave)
-- **Títulos y botones:** #D79C56 (Naranja Tostado)
-- **Acentos dinámicos:** #8B453A (Marrón Rojizo)
+- **Fondo:** #F0F4F8 (Gris claro azulado)
+- **Títulos y botones:** #0072CE (Azul intenso)
+- **Texto:** #222222 (Gris oscuro)
 
 ## Imágenes destacadas
-- `salon_comic_1.png` (adaptada al evento)
+- Logo oficial de Cevisama
+- Gráfico sobre aumento de visitantes internacionales

@@ -2,12 +2,12 @@
   <mj-head>
     <mj-attributes>
       <mj-all font-family="Helvetica, Arial, sans-serif" />
-<mj-text font-size="16px" color="#333333" line-height="150%" />
+      <mj-text font-size="16px" color="#333333" line-height="150%" />
       <mj-section padding="0px" />
     </mj-attributes>
     <mj-style>
       @media only screen and (max-width:768px) {
-        .chef-img {
+        .service-img {
           width: 100% !important;
         }
       }
@@ -20,10 +20,10 @@
     <mj-section background-color="#7b2d26" padding="20px">
       <mj-column>
         <mj-text align="center" font-size="24px" color="#ffffff" font-family="Georgia, serif">
-          Fiesta Gastronómica Feria Valencia
+          Expojove 2025 — Servicios para Expositores
         </mj-text>
         <mj-text align="center" color="#f8e9d0" font-size="16px">
-          Una experiencia culinaria para todos los sentidos
+          Accede a todos los recursos disponibles para tu participación
         </mj-text>
       </mj-column>
     </mj-section>
@@ -31,48 +31,44 @@
     <!-- Imagen destacada -->
     <mj-section padding="0">
       <mj-column>
-        <mj-image src="https://example.com/plato-principal.jpg" alt="Plato gourmet" fluid-on-mobile="true" />
+        <mj-image src="https://example.com/expojove-banner.jpg" alt="Expojove expositores" fluid-on-mobile="true" />
       </mj-column>
     </mj-section>
 
-    <!-- Presentación -->
+    <!-- Introducción -->
     <mj-section background-color="#f8e9d0" padding="20px">
       <mj-column>
         <mj-text font-size="18px" font-family="Georgia, serif" color="#7b2d26">
-          Bienvenidos a una experiencia gourmet inolvidable
+          Estimado/a {{nombre_contacto}}, bienvenido/a a Expojove
         </mj-text>
         <mj-text>
-          Descubre lo mejor de la cocina local e internacional en una jornada gastronómica única. Con la participación de chefs reconocidos, talleres en vivo y degustaciones exclusivas.
+          Como expositor/a de esta edición, tienes acceso a una serie de servicios diseñados para facilitar tu participación y maximizar tu visibilidad.
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Experiencias -->
+    <!-- Servicios -->
     <mj-section background-color="#ffffff" padding="20px">
       <mj-column>
         <mj-text font-size="18px" font-family="Georgia, serif" color="#7b2d26">
-          ¿Qué encontrarás?
+          Servicios disponibles
         </mj-text>
         <mj-text>
           <ul>
-            <li>Showcookings con chefs premiados</li>
-            <li>Experiencias sensoriales únicas</li>
-            <li>Talleres gastronómicos para todas las edades</li>
-            <li>Zona de degustación gourmet</li>
+            <li>Gestión de acreditaciones y pases</li>
+            <li>Soporte técnico para stands</li>
+            <li>Difusión en redes sociales oficiales</li>
+            <li>Acceso a estadísticas de visitantes</li>
+            <li>Promoción en newsletter oficial</li>
           </ul>
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Chefs invitados -->
+    <!-- Imagen secundaria -->
     <mj-section background-color="#f8e9d0" padding="20px">
-      <mj-column width="50%">
-        <mj-image src="https://example.com/chef1.jpg" alt="Chef reconocido" css-class="chef-img" />
-        <mj-text align="center" font-weight="bold">Chef María Soler</mj-text>
-      </mj-column>
-      <mj-column width="50%">
-        <mj-image src="https://example.com/chef2.jpg" alt="Chef reconocido" css-class="chef-img" />
-        <mj-text align="center" font-weight="bold">Chef Tomás Riera</mj-text>
+      <mj-column width="100%">
+        <mj-image src="https://example.com/services-expojove.jpg" alt="Servicios Expojove" css-class="service-img" />
       </mj-column>
     </mj-section>
 
@@ -80,13 +76,13 @@
     <mj-section background-color="#7b2d26" padding="30px">
       <mj-column>
         <mj-text align="center" color="#ffffff" font-size="20px">
-          ¡No te lo pierdas, {{nombre}}!
+          Solicita tus servicios antes del {{plazo_respuesta}}, {{empresa}}.
         </mj-text>
         <mj-text align="center" color="#f8e9d0">
-          Reserva tu plaza y selecciona tus experiencias favoritas según tu preferencia: {{preferencia_gastronomica}}.
+          Accede al formulario de solicitud para confirmar tus necesidades y garantizar tu preparación.
         </mj-text>
-        <mj-button href="https://feriavalencia.com/inscripcion-evento-gastronomico" background-color="#d4af37" color="#7b2d26">
-          Reservar Entrada
+        <mj-button href="https://feriavalencia.com/expositores-expojove-servicios" background-color="#d4af37" color="#7b2d26">
+          Solicitar Servicios
         </mj-button>
       </mj-column>
     </mj-section>
@@ -95,11 +91,11 @@
     <mj-section background-color="#fff8f1" padding="20px">
       <mj-column>
         <mj-text align="center" color="#7b2d26" font-size="16px">
-          Síguenos para más sorpresas:
+          Síguenos para novedades y actualizaciones:
         </mj-text>
         <mj-social font-size="15px" icon-size="30px" mode="horizontal">
-          <mj-social-element name="instagram" href="https://instagram.com/feriavalencia">Instagram</mj-social-element>
-          <mj-social-element name="facebook" href="https://facebook.com/feriavalencia">Facebook</mj-social-element>
+          <mj-social-element name="instagram" href="https://instagram.com/expojove">Instagram</mj-social-element>
+          <mj-social-element name="facebook" href="https://facebook.com/expojove">Facebook</mj-social-element>
         </mj-social>
       </mj-column>
     </mj-section>
@@ -108,7 +104,7 @@
     <mj-section background-color="#f8e9d0" padding="20px">
       <mj-column>
         <mj-text font-size="12px" color="#7b2d26" align="center">
-          © 2025 Feria Valencia · Todos los derechos reservados<br />
+          © 2025 Expojove · Feria Valencia · Todos los derechos reservados<br />
           Si no deseas recibir más correos, <a href="https://feriavalencia.com/unsubscribe" style="color:#7b2d26;">haz clic aquí</a>
         </mj-text>
       </mj-column>
