@@ -1,0 +1,31 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: feriavalenciapracticas
+      MYSQL_DATABASE: feriavalenciapracticas
+      MYSQL_USER: paulo
+      MYSQL_PASSWORD: feriavalenciapracticas
+    ports:
+      - "3307:3306"  # ⚠️ cambiamos a 3307 para evitar conflicto
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  node-app:
+    build: .
+    container_name: feria-node
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mysql
+    environment:
+      DB_HOST: mysql
+      DB_USER: paulo
+      DB_PASSWORD: feriavalenciapracticas
+      DB_NAME: feriavalenciapracticas
+
+volumes:
+  mysql-data:

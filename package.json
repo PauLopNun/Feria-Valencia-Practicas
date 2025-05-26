@@ -1,0 +1,28 @@
+{
+  "name": "feria-valencia-practicas",
+  "version": "1.0.0",
+  "description": "![Feria_De_Muestras](https://cdn1.valenciaciudaddelrunning.com/wp-content/uploads/2023/07/foto-principal-scaled.jpg)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PauLopNun/Feria-Valencia-Practicas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PauLopNun/Feria-Valencia-Practicas/issues"
+  },
+  "homepage": "https://github.com/PauLopNun/Feria-Valencia-Practicas#readme",
+  "dependencies": {
+    "mjml": "^4.15.3",
+    "mysql2": "^3.14.1"
+  }
+}
