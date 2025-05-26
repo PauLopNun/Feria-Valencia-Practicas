@@ -10,11 +10,14 @@ COPY package*.json ./
 # Instala dependencias
 RUN npm install
 
-# Copia el resto del código
+# Copia el resto del código de la app
 COPY . .
 
-# Expone el puerto de tu app (ajusta si usas otro)
+# Da permisos de ejecución al script de inicio
+RUN chmod +x start.sh
+
+# Expone el puerto 3000
 EXPOSE 3000
 
-# Comando por defecto
-CMD ["npm", "start"]
+# Comando por defecto al iniciar el contenedor
+CMD ["sh", "start.sh"]

@@ -9,7 +9,7 @@ services:
       MYSQL_USER: paulo
       MYSQL_PASSWORD: feriavalenciapracticas
     ports:
-      - "3307:3306"  # ⚠️ cambiamos a 3307 para evitar conflicto
+      - "3307:3306"  # ⚠️ Cambiado a 3307 por si el 3306 está ocupado en tu host
     volumes:
       - mysql-data:/var/lib/mysql
 
@@ -18,7 +18,7 @@ services:
     container_name: feria-node
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "3000:3000"  # Puerto del servidor Express
     depends_on:
       - mysql
     environment:
@@ -27,7 +27,8 @@ services:
       DB_PASSWORD: feriavalenciapracticas
       DB_NAME: feriavalenciapracticas
     volumes:
-      - ./output:/app/output  # ✅ Añadido para que puedas ver los HTMLs desde Windows
+      - .:/app  # Todo el proyecto dentro del contenedor
+      - ./output:/app/output  # Carpeta de salida visible en Windows
 
 volumes:
   mysql-data:
