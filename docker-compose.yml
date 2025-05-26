@@ -26,6 +26,8 @@ services:
       DB_USER: paulo
       DB_PASSWORD: feriavalenciapracticas
       DB_NAME: feriavalenciapracticas
+    volumes:
+      - ./output:/app/output  # ✅ Añadido para que puedas ver los HTMLs desde Windows
 
 volumes:
   mysql-data:

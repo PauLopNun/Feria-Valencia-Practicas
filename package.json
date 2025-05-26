@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/PauLopNun/Feria-Valencia-Practicas#readme",
   "dependencies": {
+    "express": "^5.1.0",
     "mjml": "^4.15.3",
     "mysql2": "^3.14.1"
   }
