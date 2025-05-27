@@ -6,7 +6,7 @@ const mysql = require('mysql2');
 const express = require('express');
 const csv = require('csv-parser');
 
-// Ruta base donde están las carpetas de los casos: Caso#1, Caso#2, etc.
+// Ruta base donde están las carpetas de los casos: Caso-1, Caso-2, etc.
 const baseDir = path.join(__dirname, 'src');
 
 // Conexión a la base de datos MySQL usando variables de entorno o valores por defecto
@@ -35,11 +35,11 @@ connection.connect(err => {
   `, err => {
     if (err) throw err;
 
-    // Leer las carpetas que empiecen por "Caso" en la ruta base
+    // Leer las carpetas que empiecen por "Caso-" en la ruta base
     fs.readdir(baseDir, { withFileTypes: true }, (err, entries) => {
       if (err) throw err;
 
-      const casos = entries.filter(e => e.isDirectory() && e.name.startsWith('Caso'));
+      const casos = entries.filter(e => e.isDirectory() && e.name.startsWith('Caso-'));
 
       casos.forEach(caso => {
         const casoPath = path.join(baseDir, caso.name);
@@ -61,7 +61,7 @@ connection.connect(err => {
 
             connection.query(
               'INSERT INTO templates (nombre, contenido) VALUES (?, ?)',
-              [`${caso.name}/${file}`, result.html],
+              [`${caso.name}/${file.replace('.mjml', '.html')}`, result.html],
               err => {
                 if (err) throw err;
                 console.log(`✅ HTML de ${file} insertado en MySQL`);
@@ -74,32 +74,31 @@ connection.connect(err => {
   });
 
   // Crear tabla "suscriptores" si no existe
-connection.query(`
-  CREATE TABLE IF NOT EXISTS suscriptores (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100),
-    email VARCHAR(255),
-    empresa VARCHAR(255),
-    idioma VARCHAR(10)
-  )
-`, err => {
-  if (err) throw err;
-  console.log('🗃️ Tabla "suscriptores" asegurada');
-});
+  connection.query(`
+    CREATE TABLE IF NOT EXISTS suscriptores (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      nombre VARCHAR(100),
+      email VARCHAR(255),
+      empresa VARCHAR(255),
+      idioma VARCHAR(10)
+    )
+  `, err => {
+    if (err) throw err;
+    console.log('🗃️ Tabla "suscriptores" asegurada');
+  });
 
-     
-  // Leer suscriptores del CSV
-  //const csvPath = path.join(__dirname, 'suscriptores.csv');
-  //const suscriptores = [];
+  // Leer suscriptores del CSV (comentado por ahora)
+  // const csvPath = path.join(__dirname, 'suscriptores.csv');
+  // const suscriptores = [];
 
-  //fs.createReadStream(csvPath)
-  //  .pipe(csv())
-  //  .on('data', (data) => suscriptores.push(data))
-  //  .on('end', () => {
-  //    console.log('📄 Suscriptores leídos desde CSV:');
-  //    console.table(suscriptores);
-  //    // Aquí puedes luego añadir lógica para enviar emails por idioma, etc.
-  //  });
+  // fs.createReadStream(csvPath)
+  //   .pipe(csv())
+  //   .on('data', (data) => suscriptores.push(data))
+  //   .on('end', () => {
+  //     console.log('📄 Suscriptores leídos desde CSV:');
+  //     console.table(suscriptores);
+  //     // Aquí puedes luego añadir lógica para enviar emails por idioma, etc.
+  //   });
 });
 
 // ------------------- EXPRESS PARA VER LOS HTML -------------------

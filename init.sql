@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS suscriptores (
 );
 
 INSERT INTO suscriptores (nombre, email, empresa, idioma) VALUES
-('Pau', 'paulopeznunez@gmail.com', 'Valencia Comics', 'es'),
-('Roberto', 'robertomoramoreno3@gmail.com', 'UK Events', 'en'),
-('Moha', 'mohamed.shahin1703@gmail.com', 'Feria Joven', 'es'),
-('Rúben', 'rubenramirezcatalu@gmail.com', 'Feria Dos Ruedas', 'es');
+('Pau', 'paulopeznunez@gmail.com', 'Valencia Comics', 'es');
+--('Roberto', 'robertomoramoreno3@gmail.com', 'UK Events', 'en'),
+--('Moha', 'mohamed.shahin1703@gmail.com', 'Feria Joven', 'es'),
+--('Rúben', 'rubenramirezcatalu@gmail.com', 'Feria Dos Ruedas', 'es'); 
