@@ -121,3 +121,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`🌐 Servidor disponible en: http://localhost:${PORT}`);
 });
+
+setTimeout(() => {
+  require('./mailer');
+}, 5000); // Espera 5 segundos (ajustable según lo que tardes)
