@@ -73,18 +73,33 @@ connection.connect(err => {
     });
   });
 
-  // Leer suscriptores del CSV
-  const csvPath = path.join(__dirname, 'suscriptores.csv');
-  const suscriptores = [];
+  // Crear tabla "suscriptores" si no existe
+connection.query(`
+  CREATE TABLE IF NOT EXISTS suscriptores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    email VARCHAR(255),
+    empresa VARCHAR(255),
+    idioma VARCHAR(10)
+  )
+`, err => {
+  if (err) throw err;
+  console.log('🗃️ Tabla "suscriptores" asegurada');
+});
 
-  fs.createReadStream(csvPath)
-    .pipe(csv())
-    .on('data', (data) => suscriptores.push(data))
-    .on('end', () => {
-      console.log('📄 Suscriptores leídos desde CSV:');
-      console.table(suscriptores);
-      // Aquí puedes luego añadir lógica para enviar emails por idioma, etc.
-    });
+     
+  // Leer suscriptores del CSV
+  //const csvPath = path.join(__dirname, 'suscriptores.csv');
+  //const suscriptores = [];
+
+  //fs.createReadStream(csvPath)
+  //  .pipe(csv())
+  //  .on('data', (data) => suscriptores.push(data))
+  //  .on('end', () => {
+  //    console.log('📄 Suscriptores leídos desde CSV:');
+  //    console.table(suscriptores);
+  //    // Aquí puedes luego añadir lógica para enviar emails por idioma, etc.
+  //  });
 });
 
 // ------------------- EXPRESS PARA VER LOS HTML -------------------
