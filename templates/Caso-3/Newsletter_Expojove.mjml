@@ -87,7 +87,7 @@
     <mj-section background-color="#00adef" padding="20px">
       <mj-column>
         <mj-text align="center" color="#ffffff" font-size="20px">
-          Solicita tus servicios antes del {{plazo_respuesta}}, {{empresa}}.
+          Solicita tus servicios antes del {{tiempo_respuesta}}, {{empresa}}.
         </mj-text>
         <mj-text align="center" color="#dff6fd">
           Accede al formulario de solicitud para confirmar tus necesidades y garantizar tu preparación.
