@@ -1,23 +1,20 @@
-# Usa una imagen oficial de Node.js
 FROM node:18
 
-# Crea y usa el directorio de trabajo
+# Instala netcat-openbsd para que wait-for.sh funcione
+RUN apt-get update && apt-get install -y netcat-openbsd && apt-get clean
+
 WORKDIR /app
 
-# Copia los archivos de dependencias
 COPY package*.json ./
 
-# Instala dependencias
 RUN npm install
 
-# Copia el resto del código de la app
 COPY . .
 
-# Da permisos de ejecución al script de inicio
-RUN chmod +x start.sh
+RUN chmod +x wait-for.sh
 
-# Expone el puerto 3000
 EXPOSE 3000
 
-# Comando por defecto al iniciar el contenedor
-CMD ["sh", "start.sh"]
+# Esperar a que MySQL esté disponible antes de arrancar
+ENTRYPOINT ["./wait-for.sh", "mysql-db", "3306"]
+CMD ["sh", "./start.sh"]

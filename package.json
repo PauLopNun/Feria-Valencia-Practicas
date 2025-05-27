@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "server": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,8 +18,9 @@
   },
   "homepage": "https://github.com/PauLopNun/Feria-Valencia-Practicas#readme",
   "dependencies": {
-    "express": "^5.1.0",
+    "csv-parser": "^3.0.0",
     "mjml": "^4.15.3",
-    "mysql2": "^3.14.1"
+    "mysql2": "^3.2.4",
+    "express": "^4.18.4"
   }
 }
