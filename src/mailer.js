@@ -1,9 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const nodemailer = require('nodemailer');
-const mysql = require('mysql2');
 
-// 📌 Mapeo de empresa → ruta de newsletter
+// Mapeo empresa → ruta newsletter HTML (ya convertidos de MJML a HTML)
 const newsletterMap = {
   'Valencia Comics': path.join(__dirname, 'output', 'Caso-1', 'newsletter_salon_comic_valencia.html'),
   'UK Events': path.join(__dirname, 'output', 'Caso-2', 'Newsletter_Cevisama.html'),
@@ -11,21 +10,7 @@ const newsletterMap = {
   'Feria Dos Ruedas': path.join(__dirname, 'output', 'Caso-4', 'Newsletter_Feria_2_Ruedas.html')
 };
 
-// ✅ Configurar conexión a MySQL
-const connection = mysql.createConnection({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || '',
-  port: process.env.DB_PORT || 3306
-});
-
-// ✅ Comprobar credenciales Gmail
-console.log('📧 Comprobando variables de entorno...');
-console.log('GMAIL_USER:', process.env.GMAIL_USER);
-console.log('GMAIL_PASS:', process.env.GMAIL_PASS ? '✓ cargada' : '✗ vacía');
-
-// 📨 Configurar transporte
+// Crear transporter de Nodemailer para Gmail
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -37,44 +22,50 @@ const transporter = nodemailer.createTransport({
 transporter.verify((error, success) => {
   if (error) {
     console.error('❌ Fallo al conectar con Gmail:', error);
-    return;
+  } else {
+    console.log('✅ Conexión a Gmail verificada correctamente');
   }
-  console.log('✅ Conexión a Gmail verificada correctamente');
+});
 
-  // 📤 Leer suscriptores desde MySQL
-  connection.query('SELECT * FROM suscriptores', (err, rows) => {
-    if (err) {
-      console.error('❌ Error al leer suscriptores desde MySQL:', err);
-      return;
+// Función para sustituir variables {{var}} en el template HTML
+function personalizarContenido(template, datos) {
+  return template.replace(/{{\s*([^}]+)\s*}}/g, (match, key) => {
+    return datos[key] || ''; // si no hay valor, vacío
+  });
+}
+
+// Función principal para enviar newsletters
+async function enviarNewsletters(suscriptores) {
+  console.log(`📨 Enviando newsletters a ${suscriptores.length} suscriptores...`);
+  for (const suscriptor of suscriptores) {
+    const empresa = suscriptor.empresa ? suscriptor.empresa.trim() : '';
+    const newsletterPath = newsletterMap[empresa];
+
+    if (!newsletterPath || !fs.existsSync(newsletterPath)) {
+      console.warn(`❌ No se encontró newsletter para empresa "${empresa}". Omitiendo a ${suscriptor.email}`);
+      continue;
     }
 
-    console.log('📨 Enviando newsletters a:');
-    console.table(rows);
+    // Leer contenido HTML
+    let htmlContent = fs.readFileSync(newsletterPath, 'utf8');
 
-    rows.forEach(suscriptor => {
-      const empresa = suscriptor.empresa.trim();
-      const newsletterPath = newsletterMap[empresa];
+    // Personalizar variables con datos del suscriptor
+    htmlContent = personalizarContenido(htmlContent, suscriptor);
 
-      if (!newsletterPath || !fs.existsSync(newsletterPath)) {
-        console.warn(`❌ No se encontró newsletter para empresa "${empresa}". Se omite a ${suscriptor.email}`);
-        return;
-      }
+    const mailOptions = {
+      from: `"Feria Valencia" <${process.env.GMAIL_USER}>`,
+      to: suscriptor.email,
+      subject: 'Tu Newsletter de Feria Valencia',
+      html: htmlContent
+    };
 
-      const htmlContent = fs.readFileSync(newsletterPath, 'utf8');
+    try {
+      const info = await transporter.sendMail(mailOptions);
+      console.log(`✅ Correo enviado a ${suscriptor.email}: ${info.response}`);
+    } catch (error) {
+      console.error(`❌ Error enviando a ${suscriptor.email}:`, error);
+    }
+  }
+}
 
-      const mailOptions = {
-        from: `"Feria Valencia" <${process.env.GMAIL_USER}>`,
-        to: suscriptor.email,
-        subject: 'Tu Newsletter de Feria Valencia',
-        html: htmlContent
-      };
-
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.error(`❌ Error enviando a ${suscriptor.email}:`, error);
-        }
-        console.log(`✅ Correo enviado a ${suscriptor.email}: ${info.response}`);
-      });
-    });
-  });
-});
+module.exports = { enviarNewsletters };

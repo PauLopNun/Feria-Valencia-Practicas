@@ -45,7 +45,7 @@
     <mj-section background-color="#fdd900" padding="20px">
       <mj-column>
         <mj-text font-size="18px" font-family="Georgia, serif" color="#333333">
-          Estimado/a {{nombre_contacto}}, bienvenido/a a Expojove
+          Estimado/a {{nombre}}, bienvenido/a a Expojove
         </mj-text>
         <mj-text>
           Como expositor/a de esta edición, tienes acceso a una serie de servicios diseñados para facilitar tu participación y maximizar tu visibilidad.

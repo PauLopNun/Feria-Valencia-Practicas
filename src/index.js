@@ -1,23 +1,19 @@
-// importar dependencias necesarias
 const fs = require('fs');
 const path = require('path');
 const mjml = require('mjml');
 const mysql = require('mysql2');
 const express = require('express');
-const csv = require('csv-parser');
 
-// Ruta base donde están las carpetas de los casos: Caso-1, Caso-2, etc.
 const baseDir = path.join(__dirname, '..', 'templates');
 
-// Conexión a la base de datos MySQL usando variables de entorno o valores por defecto
 const connection = mysql.createConnection({
   host: process.env.DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || ''
+  database: process.env.DB_NAME || 'feria_valencia',
+  port: process.env.DB_PORT || 3306
 });
 
-// Intentar conectar a la base de datos
 connection.connect(err => {
   if (err) {
     console.error('❌ Error conectando a MySQL:', err);
@@ -25,17 +21,17 @@ connection.connect(err => {
   }
   console.log('✅ Conectado a MySQL');
 
-  // Crear tabla "templates" si no existe
+  // Crear tabla templates si no existe
   connection.query(`
     CREATE TABLE IF NOT EXISTS templates (
       id INT AUTO_INCREMENT PRIMARY KEY,
-      nombre VARCHAR(255),
+      nombre VARCHAR(255) UNIQUE,
       contenido LONGTEXT
     )
   `, err => {
     if (err) throw err;
 
-    // Leer las carpetas que empiecen por "Caso-" en la ruta base
+    // Leer carpetas Caso-* en templates y compilar MJML a HTML, guardar en disco y DB
     fs.readdir(baseDir, { withFileTypes: true }, (err, entries) => {
       if (err) throw err;
 
@@ -52,6 +48,10 @@ connection.connect(err => {
             const mjmlContent = fs.readFileSync(inputPath, 'utf8');
             const result = mjml(mjmlContent);
 
+            if (result.errors.length) {
+              console.warn(`⚠️ Errores en MJML de ${file}:`, result.errors);
+            }
+
             const outputDir = path.join(__dirname, 'output', caso.name);
             fs.mkdirSync(outputDir, { recursive: true });
 
@@ -59,56 +59,45 @@ connection.connect(err => {
             fs.writeFileSync(outputPath, result.html);
             console.log(`✅ HTML generado: ${outputPath}`);
 
-            connection.query(
-              'INSERT INTO templates (nombre, contenido) VALUES (?, ?)',
-              [`${caso.name}/${file.replace('.mjml', '.html')}`, result.html],
-              err => {
-                if (err) throw err;
-                console.log(`✅ HTML de ${file} insertado en MySQL`);
-              }
-            );
+            const nombreTemplate = `${caso.name}/${file.replace('.mjml', '.html')}`;
+            const contenidoHTML = result.html;
+
+            const sql = `
+              INSERT INTO templates (nombre, contenido) VALUES (?, ?)
+              ON DUPLICATE KEY UPDATE contenido = VALUES(contenido)
+            `;
+
+            connection.query(sql, [nombreTemplate, contenidoHTML], err => {
+              if (err) throw err;
+              console.log(`✅ HTML de ${file} insertado o actualizado en MySQL`);
+            });
           });
         });
       });
     });
   });
 
-  // Crear tabla "suscriptores" si no existe
+  // Crear tabla suscriptores con columna tiempo_respuesta tipo DATE
   connection.query(`
     CREATE TABLE IF NOT EXISTS suscriptores (
       id INT AUTO_INCREMENT PRIMARY KEY,
       nombre VARCHAR(100),
       email VARCHAR(255),
       empresa VARCHAR(255),
-      idioma VARCHAR(10)
+      idioma VARCHAR(10),
+      tiempo_respuesta DATE DEFAULT NULL
     )
   `, err => {
     if (err) throw err;
     console.log('🗃️ Tabla "suscriptores" asegurada');
   });
-
-  // Leer suscriptores del CSV (comentado por ahora)
-  // const csvPath = path.join(__dirname, 'suscriptores.csv');
-  // const suscriptores = [];
-
-  // fs.createReadStream(csvPath)
-  //   .pipe(csv())
-  //   .on('data', (data) => suscriptores.push(data))
-  //   .on('end', () => {
-  //     console.log('📄 Suscriptores leídos desde CSV:');
-  //     console.table(suscriptores);
-  //     // Aquí puedes luego añadir lógica para enviar emails por idioma, etc.
-  //   });
 });
 
-// ------------------- EXPRESS PARA VER LOS HTML -------------------
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Servir archivos estáticos generados en /output
 app.use(express.static(path.join(__dirname, 'output')));
 
-// Página principal: mostrar enlaces a todos los HTML generados
 app.get('/', (req, res) => {
   const outputBase = path.join(__dirname, 'output');
   if (!fs.existsSync(outputBase)) {
@@ -131,11 +120,30 @@ app.get('/', (req, res) => {
   res.send(html);
 });
 
-// Iniciar el servidor Express
 app.listen(PORT, () => {
   console.log(`🌐 Servidor disponible en: http://localhost:${PORT}`);
 });
 
+// Importar función de envío de correos
+const { enviarNewsletters } = require('./mailer');
+
+// Esperar 5 segundos y luego lanzar el envío de newsletters
 setTimeout(() => {
-  require('./mailer');
-}, 5000); // Espera 5 segundos (ajustable según lo que tardes)
+  connection.query('SELECT nombre, email, empresa, idioma, tiempo_respuesta FROM suscriptores', (err, results) => {
+    if (err) {
+      console.error('❌ Error leyendo suscriptores:', err);
+      return;
+    }
+
+    // Formatear tiempo_respuesta a formato legible en español (ej: 15 de noviembre de 2025)
+    results.forEach(suscriptor => {
+      if (suscriptor.tiempo_respuesta) {
+        const fecha = new Date(suscriptor.tiempo_respuesta);
+        const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+        suscriptor.tiempo_respuesta = fecha.toLocaleDateString('es-ES', opciones);
+      }
+    });
+
+    enviarNewsletters(results);
+  });
+}, 5000);

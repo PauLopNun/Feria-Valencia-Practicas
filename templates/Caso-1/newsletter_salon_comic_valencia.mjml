@@ -1,3 +1,5 @@
+<!-- Utilizado para variables {{}}-->
+
 <mjml>
   <mj-head>
     <mj-style inline="inline">
@@ -20,7 +22,7 @@
     <mj-section padding="10px">
       <mj-column>
         <mj-text font-size="14px" line-height="20px" font-weight="300" color="#dddddd" align="center">
-          Hola, <b>{nombre}</b>. ¡Nos alegra que estés interesado en el evento!
+          Hola, <b>{{nombre}}</b>. ¡Nos alegra que estés interesado en el evento!
         </mj-text>
       </mj-column>
     </mj-section>
