@@ -7,7 +7,7 @@ const express = require('express');
 const csv = require('csv-parser');
 
 // Ruta base donde están las carpetas de los casos: Caso-1, Caso-2, etc.
-const baseDir = path.join(__dirname, 'src');
+const baseDir = path.join(__dirname, '..', 'templates');
 
 // Conexión a la base de datos MySQL usando variables de entorno o valores por defecto
 const connection = mysql.createConnection({

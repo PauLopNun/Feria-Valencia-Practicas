@@ -12,7 +12,7 @@ services:
       - "3307:3306"
     volumes:
       - mysql-data:/var/lib/mysql
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # Aquí se ejecuta el init al arrancar
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   node-app:
     build: .
