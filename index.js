@@ -1,13 +1,15 @@
+// importar dependencias necesarias
 const fs = require('fs');
 const path = require('path');
 const mjml = require('mjml');
 const mysql = require('mysql2');
 const express = require('express');
+const csv = require('csv-parser');
 
-// Ruta base donde están las carpetas Caso#1, Caso#2, etc.
+// Ruta base donde están las carpetas de los casos: Caso#1, Caso#2, etc.
 const baseDir = path.join(__dirname, 'src');
 
-// Conexión a la base de datos usando variables de entorno
+// Conexión a la base de datos MySQL usando variables de entorno o valores por defecto
 const connection = mysql.createConnection({
   host: process.env.DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
@@ -15,6 +17,7 @@ const connection = mysql.createConnection({
   database: process.env.DB_NAME || ''
 });
 
+// Intentar conectar a la base de datos
 connection.connect(err => {
   if (err) {
     console.error('❌ Error conectando a MySQL:', err);
@@ -22,7 +25,7 @@ connection.connect(err => {
   }
   console.log('✅ Conectado a MySQL');
 
-  // Crear tabla si no existe
+  // Crear tabla "templates" si no existe
   connection.query(`
     CREATE TABLE IF NOT EXISTS templates (
       id INT AUTO_INCREMENT PRIMARY KEY,
@@ -32,7 +35,7 @@ connection.connect(err => {
   `, err => {
     if (err) throw err;
 
-    // Leer carpetas Caso#1, Caso#2, ...
+    // Leer las carpetas que empiecen por "Caso" en la ruta base
     fs.readdir(baseDir, { withFileTypes: true }, (err, entries) => {
       if (err) throw err;
 
@@ -69,16 +72,29 @@ connection.connect(err => {
       });
     });
   });
+
+  // Leer suscriptores del CSV
+  const csvPath = path.join(__dirname, 'suscriptores.csv');
+  const suscriptores = [];
+
+  fs.createReadStream(csvPath)
+    .pipe(csv())
+    .on('data', (data) => suscriptores.push(data))
+    .on('end', () => {
+      console.log('📄 Suscriptores leídos desde CSV:');
+      console.table(suscriptores);
+      // Aquí puedes luego añadir lógica para enviar emails por idioma, etc.
+    });
 });
 
 // ------------------- EXPRESS PARA VER LOS HTML -------------------
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Servir archivos estáticos desde /output
+// Servir archivos estáticos generados en /output
 app.use(express.static(path.join(__dirname, 'output')));
 
-// Página de inicio con lista de enlaces
+// Página principal: mostrar enlaces a todos los HTML generados
 app.get('/', (req, res) => {
   const outputBase = path.join(__dirname, 'output');
   if (!fs.existsSync(outputBase)) {
@@ -101,6 +117,7 @@ app.get('/', (req, res) => {
   res.send(html);
 });
 
+// Iniciar el servidor Express
 app.listen(PORT, () => {
   console.log(`🌐 Servidor disponible en: http://localhost:${PORT}`);
 });

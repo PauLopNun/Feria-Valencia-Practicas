@@ -7,7 +7,8 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+# Instala dependencias necesarias (añadimos nodemailer y csv-parser)
+RUN npm install mjml mysql2 express csv-parser nodemailer
 
 COPY . .
 
