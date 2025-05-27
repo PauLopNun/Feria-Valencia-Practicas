@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:24-slim
 
 # Instala netcat-openbsd para que wait-for.sh funcione
 RUN apt-get update && apt-get install -y netcat-openbsd && apt-get clean
