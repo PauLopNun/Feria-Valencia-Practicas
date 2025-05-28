@@ -69,6 +69,17 @@ La campaña de email se dirige a empresas expositoras en la feria internacional 
 
 ## Diseño
 
+### Estilo Visual
+
+- **Fondo principal:** #1A1A1A (Gris Casi Negro)
+- **Secciones intermedias:** #1F1F1F (Gris Profundo)
+- **Bloques destacados / CTA:** #0F0F0F (Negro Profundo)
+- **Textos principales:** #ffffff (Blanco Puro)
+- **Textos secundarios:** #bbbbbb (Gris Claro)
+- **Textos más tenues:** #cccccc (Gris Suave)
+- **Botón principal:** #0072CE (Azul Corporativo)
+- **Gradiente CTA:** #DA0081 (Magenta Corporativo)
+
 ### Creatividad e Innovación
 
 Diseño profesional, sobrio y elegante:

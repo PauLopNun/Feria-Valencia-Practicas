@@ -65,6 +65,15 @@ La campaña busca asegurar que todos los expositores conozcan y utilicen los ser
 
 ## Diseño
 
+### Estilo Visual
+
+- **Fondo principal:** #ffffff (Blanco)
+- **Encabezado y CTA:** #00adef (Azul Celeste)
+- **Subtítulos suaves:** #dff6fd (Azul Muy Claro)
+- **Bloque de bienvenida:** #fdd900 (Amarillo Vibrante)
+- **Texto general:** #333333 (Gris Oscuro)
+- **Botón CTA:** #ec008c (Magenta Intenso)
+
 ### Enfoque Visual y Funcional
 
 El diseño apuesta por:

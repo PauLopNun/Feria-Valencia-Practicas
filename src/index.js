@@ -4,7 +4,7 @@ const mjml = require('mjml');
 const mysql = require('mysql2');
 const express = require('express');
 
-const baseDir = path.join(__dirname, '..', 'templates');
+const baseDir = path.join(__dirname, 'templates');
 
 const connection = mysql.createConnection({
   host: process.env.DB_HOST || 'localhost',
