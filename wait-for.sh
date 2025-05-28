@@ -1,20 +1,17 @@
 #!/bin/sh
 
-# Dirección y puerto pasados como argumentos
+# Script para esperar a que un servicio esté disponible en una IP:PUERTO
+# Uso: ./wait-for.sh servicio puerto comando...
+
 HOST="$1"
 PORT="$2"
 
-# Eliminar los dos primeros argumentos (host y puerto)
-shift 2
+echo "⏳ Esperando a que $HOST:$PORT esté disponible..."
 
-echo "⏳ Esperando a que MySQL esté disponible en $HOST:$PORT..."
-
-until nc -z "$HOST" "$PORT"; do
-  echo "🔄 MySQL no disponible aún... esperando 1s"
+while ! nc -z "$HOST" "$PORT"; do
   sleep 1
 done
 
-echo "✅ MySQL disponible, arrancando app"
+echo "✅ $HOST:$PORT está disponible. Continuando..."
 
-# Ejecutar el resto del comando (por ejemplo: node index.js)
-exec "$@"
+exec "${@:3}"

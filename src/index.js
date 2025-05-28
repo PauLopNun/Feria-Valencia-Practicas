@@ -7,7 +7,7 @@ const express = require('express');
 const baseDir = path.join(__dirname, 'templates');
 
 const connection = mysql.createConnection({
-  host: process.env.DB_HOST || 'localhost',
+  host: process.envrecuerdas el env de mi proyecto en local y .DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || '',
   database: process.env.DB_NAME || 'feria_valencia',
