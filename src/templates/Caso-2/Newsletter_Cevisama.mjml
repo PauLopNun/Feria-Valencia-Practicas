@@ -1,5 +1,6 @@
 <mjml>
   <mj-head>
+    <!-- Atributos globales para fuentes, padding, etc. -->
     <mj-attributes>
       <mj-all font-family="Helvetica, Arial, sans-serif" />
       <mj-text font-size="16px" line-height="150%" />
@@ -7,6 +8,7 @@
       <mj-column padding="0" />
     </mj-attributes>
 
+    <!-- Estilos personalizados y media queries -->
     <mj-style inline="inline">
       a { color: #bbbbbb; }
       .cta-button {
@@ -57,16 +59,17 @@
   </mj-head>
 
   <mj-body background-color="#1A1A1A">
+    <!-- Espacio superior -->
     <mj-section padding="20px"></mj-section>
 
-    <!-- Header -->
+    <!-- HEADER: logotipo Cevisama -->
     <mj-section background-color="#0F0F0F" padding="20px 0">
       <mj-column>
         <mj-image src="https://www.itc.uji.es/wp-content/uploads/CEVISMA.jpg" width="200px" />
       </mj-column>
     </mj-section>
 
-    <!-- Intro -->
+    <!-- INTRO: saludo personalizado y contexto -->
     <mj-section background-color="#1F1F1F" padding="40px 20px">
       <mj-column>
         <mj-text align="center" font-size="22px" font-weight="bold" color="#ffffff">✨ ¡Cevisama 2025 te espera, {{nombre_contacto}}! ✨</mj-text>
@@ -76,7 +79,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- Franja colorida -->
+    <!-- FRASE DESTACADA en fondo oscuro -->
     <mj-section background-color="#141414" padding="30px 0">
       <mj-column>
         <mj-text font-size="18px" font-weight="bold" color="#ffffff" align="center">
@@ -85,7 +88,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- Beneficios -->
+    <!-- BENEFICIOS de participar como expositor -->
     <mj-section background-color="#1F1F1F" padding="30px 20px">
       <mj-column>
         <mj-text font-size="18px" font-weight="bold" color="#ffffff">¿Por qué exponer en Cevisama 2025?</mj-text>
@@ -98,7 +101,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- Imagen -->
+    <!-- IMAGEN ILUSTRATIVA con datos de participación -->
     <mj-section background-color="#1F1F1F" padding="20px">
       <mj-column width="95%">
         <mj-image border-radius="6px" src="https://cevisama.feriavalencia.com/wp-content/uploads/2020/02/distribuidor-2.jpg" />
@@ -108,7 +111,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- CTA -->
+    <!-- CTA PRINCIPAL para confirmar asistencia -->
     <mj-section background-color="#0F0F0F" padding="30px 20px">
       <mj-column>
         <mj-text font-size="18px" font-weight="bold" color="#ffffff" align="center">
@@ -120,7 +123,19 @@
       </mj-column>
     </mj-section>
 
-    <!-- Footer -->
+    <!-- CTA hacia formulario personalizado -->
+    <mj-section background-color="#141414" padding="20px 20px">
+      <mj-column>
+        <mj-text align="center" font-size="16px" color="#ffffff">
+          ¿Que te ha parecido la Newsletter?
+        </mj-text>
+          <mj-button align="center" href="https://docs.google.com/forms/..." background-color="#0072CE" color="white" font-size="16px" border-radius="4px">
+            Rellena el formulario
+          </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- PIE DE PÁGINA: dirección y redes sociales -->
     <mj-section background-color="#1A1A1A" padding="30px 20px">
       <mj-column>
         <mj-text font-size="14px" color="#bbbbbb" align="center">
@@ -134,7 +149,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- Línea inferior -->
+    <!-- LÍNEA FINAL de separación -->
     <mj-section>
       <mj-column>
         <mj-divider border-color="#333333" border-width="1px" />

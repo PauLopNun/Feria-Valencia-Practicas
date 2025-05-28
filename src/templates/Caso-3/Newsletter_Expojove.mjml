@@ -1,11 +1,13 @@
 <mjml>
   <mj-head>
+    <!-- Atributos globales para fuente, texto, secciones -->
     <mj-attributes>
       <mj-all font-family="Helvetica, Arial, sans-serif" />
       <mj-text font-size="16px" color="#333333" line-height="150%" />
       <mj-section padding="0px" />
     </mj-attributes>
 
+    <!-- Estilos responsivos personalizados para móvil y tablet -->
     <mj-style>
       /* Media queries personalizadas */
       @media only screen and (max-width: 768px) {
@@ -51,13 +53,14 @@
 
   <mj-body background-color="#ffffff">
 
+    <!-- Logo de Expojove -->
     <mj-section padding="20px">
       <mj-column width="35%">
         <mj-image src="https://www.expojove.com/wp-content/uploads/2022/11/logoexpo22.png" fluid-on-mobile="true" />
       </mj-column>
     </mj-section>
 
-    <!-- Encabezado -->
+    <!-- Encabezado principal con título y subtítulo -->
     <mj-section background-color="#00adef" padding="20px">
       <mj-column width="100%">
         <mj-text align="center" css-class="title" font-size="24px" color="#ffffff" font-family="Georgia, serif">
@@ -69,10 +72,10 @@
       </mj-column>
     </mj-section>
 
-    <!-- Espaciado -->
+    <!-- Espaciado visual -->
     <mj-section padding="20px"></mj-section>
 
-    <!-- Introducción -->
+    <!-- Mensaje de bienvenida personalizado -->
     <mj-section background-color="#fdd900" padding="20px">
       <mj-column>
         <mj-text css-class="mobile-center" font-size="18px" font-family="Georgia, serif" color="#333333">
@@ -84,7 +87,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- Servicios -->
+    <!-- Sección con imagen y lista de servicios -->
     <mj-section background-color="#ffffff" padding="20px">
       <mj-column width="40%">
         <mj-image css-class="service-img" padding="5px" border-radius="2%" src="https://firagirona.com/wp-content/uploads/2024/12/Cartell-expojove-2025-scaled.gif" fluid-on-mobile="true" />
@@ -105,10 +108,10 @@
       </mj-column>
     </mj-section>
 
-    <!-- Espaciado -->
+    <!-- Espaciado visual mínimo -->
     <mj-section padding="1px"></mj-section>
 
-    <!-- Llamada a la acción -->
+    <!-- Llamada a la acción con enlace al formulario personalizado -->
     <mj-section background-color="#00adef" padding="20px">
       <mj-column>
         <mj-text align="center" css-class="cta-text" color="#ffffff" font-size="20px">
@@ -117,20 +120,36 @@
         <mj-text align="center" css-class="subtitle" color="#dff6fd">
           Accede al formulario de solicitud para confirmar tus necesidades y garantizar tu preparación.
         </mj-text>
-        <mj-button href="https://feriavalencia.com/expositores-expojove-servicios" background-color="#ec008c" color="#ffffff">
+        <mj-button 
+          href="https://feriavalencia.com/expositores-expojove-servicios" 
+          background-color="#ec008c" 
+          color="#ffffff"
+        >
           Solicitar Servicios
         </mj-button>
       </mj-column>
     </mj-section>
 
-    <!-- Imagen secundaria -->
+    <!-- Imagen secundaria informativa -->
     <mj-section background-color="#ffffff" padding="40px">
       <mj-column width="100%">
         <mj-image border-radius="2%" src="https://practicas.feriavalencia.com/wp-content/uploads/2025/05/newsexpo1.png" fluid-on-mobile="true" />
       </mj-column>
     </mj-section>
 
-    <!-- Redes sociales -->
+    <!-- CTA hacia formulario personalizado -->
+    <mj-section background-color="#00adef" padding="20px 20px">
+      <mj-column>
+        <mj-text align="center" font-size="16px" color="#ffffff">
+          ¿Que te ha parecido la Newsletter?
+        </mj-text>
+        <mj-button align="center" href="https://docs.google.com/forms/d/e/1FAIpQLSf4uMmgoLM8caTjmTLXd6lZT83sCxk3FfjIaPdAvSkmaQOZkw/viewform?usp=header" background-color="#DA0081" color="white" font-size="16px" border-radius="4px" css-class="cta-button">
+          Rellena el formulario
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Redes sociales oficiales de Expojove -->
     <mj-section background-color="#ffffff" padding="20px">
       <mj-column>
         <mj-text align="center" color="#333333" font-size="16px">
@@ -143,7 +162,8 @@
       </mj-column>
     </mj-section>
 
-    <!-- Footer -->
+
+    <!-- Pie de página con derechos y opción de desuscribirse -->
     <mj-section background-color="#fdd900" padding="20px">
       <mj-column>
         <mj-text css-class="footer-text" font-size="12px" color="#333333" align="center">

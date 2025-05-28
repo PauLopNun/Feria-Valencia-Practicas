@@ -1,7 +1,7 @@
-<!-- Utilizado para variables {{}}-->
-
+<!-- Plantilla de newsletter para el Salón del Cómic de Valencia -->
 <mjml>
   <mj-head>
+    <!-- Estilos personalizados, incluyendo media queries para responsive -->
     <mj-style inline="inline">
       a {
         color: #bbbbbb;
@@ -31,39 +31,35 @@
         padding: 10px;
       }
 
+      /* Estilos para móvil */
       @media only screen and (max-width: 480px) {
         .body-text {
           font-size: 13px !important;
           line-height: 20px !important;
         }
-
         .title-text {
           font-size: 20px !important;
         }
-
         .image-padding {
           padding: 8px !important;
         }
-
         .section-padding {
           padding: 5px !important;
         }
       }
 
+      /* Estilos para tablet */
       @media only screen and (min-width: 481px) and (max-width: 768px) {
         .body-text {
           font-size: 14px !important;
           line-height: 21px !important;
         }
-
         .title-text {
           font-size: 21px !important;
         }
-
         .image-padding {
           padding: 12px !important;
         }
-
         .section-padding {
           padding: 8px !important;
         }
@@ -72,7 +68,8 @@
   </mj-head>
 
   <mj-body background-color="#4F6A44">
-
+    
+    <!-- LOGO DEL EVENTO -->
     <mj-section padding="15px 0 0 0">
       <mj-column width="40%">
         <mj-image
@@ -84,6 +81,7 @@
       </mj-column>
     </mj-section>
 
+    <!-- MENSAJE DE BIENVENIDA -->
     <mj-section css-class="section-padding">
       <mj-column>
         <mj-text css-class="body-text" font-weight="300" color="#dddddd" align="center">
@@ -92,7 +90,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- SECCION PRINCIPAL -->
+    <!-- SECCIÓN PRINCIPAL: Título y Divider -->
     <mj-section background-color="#141414" padding="35px 0 0 0">
       <mj-column>
         <mj-text font-size="14px" line-height="22px" font-weight="bold" align="center" color="#bbbbbb">
@@ -104,11 +102,12 @@
       </mj-column>
     </mj-section>
 
+    <!-- SECCIÓN CON CARTEL DEL EVENTO -->
     <mj-section background-color="#141414">
       <mj-column width="50%">
         <mj-image
           align="center"
-          alt="Imagen 2"
+          alt="Cartel evento"
           src="https://www.saloncomicvalencia.com/wp-content/uploads/2024/12/CARTEL_XIANNUSTUDIO_2025-1-724x1024.jpg"
           css-class="image-padding"
           fluid-on-mobile="true"
@@ -116,6 +115,7 @@
       </mj-column>
     </mj-section>
 
+    <!-- DIVISORES PARA SEPARAR SECCIONES -->
     <mj-section padding="0px">
       <mj-column>
         <mj-divider css-class="divider" border-color="#1c1c1c" width="99%" padding="0px"></mj-divider>
@@ -123,8 +123,9 @@
       </mj-column>
     </mj-section>
 
-    <!-- NOTICIAS DESTACADAS -->
+    <!-- SECCIÓN: NOTICIAS DESTACADAS -->
     <mj-section background-color="#141414">
+      <!-- Columna de texto -->
       <mj-column>
         <mj-text css-class="title-text" color="#bcc" font-family="helvetica" align="right">
           <singleline>Noticias Destacadas</singleline>
@@ -135,11 +136,14 @@
           <b>Nuevos lanzamientos:</b> Descubre los cómics que se presentarán en primicia.
         </mj-text>
       </mj-column>
+
+      <!-- Columna de imagen decorativa -->
       <mj-column>
         <mj-image alt="Feature image" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/feria_valencia_banner.jpeg?raw=true" />
       </mj-column>
     </mj-section>
 
+    <!-- DIVISORES ENTRE SECCIONES -->
     <mj-section padding="0px">
       <mj-column>
         <mj-divider css-class="divider" border-color="#1c1c1c" width="99%" padding="0px"></mj-divider>
@@ -147,11 +151,14 @@
       </mj-column>
     </mj-section>
 
-    <!-- PROMOCIONES ESPECIALES -->
+    <!-- SECCIÓN: PROMOCIONES ESPECIALES -->
     <mj-section background-color="#141414">
+      <!-- Columna de imagen -->
       <mj-column>
-        <mj-image alt="Feature image" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/cabecera_salon_comic.jpg?raw=true" />
+        <mj-image alt="Imagen promociones" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/cabecera_salon_comic.jpg?raw=true" />
       </mj-column>
+
+      <!-- Columna de texto -->
       <mj-column>
         <mj-text css-class="title-text" color="#bcc" font-family="helvetica" align="left">
           <singleline>Promociones Especiales</singleline>
@@ -166,7 +173,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- Línea añadida debajo de promociones especiales -->
+    <!-- DIVISORES DESPUÉS DE PROMOCIONES -->
     <mj-section padding="0px">
       <mj-column>
         <mj-divider css-class="divider" border-color="#1c1c1c" width="99%" padding="0px"></mj-divider>
@@ -174,8 +181,22 @@
       </mj-column>
     </mj-section>
 
+    <!-- CTA hacia tu formulario personalizado -->
+      <mj-section background-color="#141414" padding="20px 20px">
+        <mj-column>
+          <mj-text align="center" font-size="16px" color="#ffffff">
+            ¿Que te ha parecido la Newsletter?
+          </mj-text>
+          <mj-button href="https://docs.google.com/forms/d/e/1FAIpQLSf4uMmgoLM8caTjmTLXd6lZT83sCxk3FfjIaPdAvSkmaQOZkw/viewform?usp=header" background-color="#DA0081" color="white" font-size="16px" border-radius="4px" css-class="cta-button">
+            Rellena el formulario
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+    <!-- PIE DE PÁGINA: REDES SOCIALES Y DATOS DE CONTACTO -->
     <mj-section padding="0px">
       <mj-column>
+        <!-- Redes sociales -->
         <mj-social font-size="14px" icon-size="32px" mode="horizontal" align="left" padding="16px 0">
           <mj-social-element name="facebook" href="https://www.facebook.com/SalonComicValencia/" background-color="#3b5998">
             Facebook
@@ -188,6 +209,7 @@
           </mj-social-element>
         </mj-social>
 
+        <!-- Datos de contacto y enlaces legales -->
         <mj-text font-size="12px" line-height="20px" font-weight="300" color="#bbbbbb">
           Centro de ayuda <br>Privacidad<br>Condiciones<br>
           <a href="mailto:saloncomicvalencia@gmail.com" style="color: #bbbbbb;">saloncomicvalencia@gmail.com</a>
@@ -199,6 +221,8 @@
           <a href="https://saloncomicvalencia.com" style="color: #bbbbbb;">saloncomicvalencia.com</a>
         </mj-text>
       </mj-column>
+
+      <!-- Información de copyright -->
       <mj-column>
         <mj-text font-size="10px" font-weight="300" color="#bbbbbb" align="right">
           <multiline>Feria Muestras Valencia - 2025</multiline>
@@ -206,6 +230,7 @@
       </mj-column>
     </mj-section>
 
+    <!-- DIVISORES FINALES -->
     <mj-section padding="0px">
       <mj-column>
         <mj-divider css-class="divider" border-color="#1c1c1c" width="100%" padding="0px"></mj-divider>
