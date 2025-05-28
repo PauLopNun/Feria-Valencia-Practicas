@@ -129,7 +129,7 @@
         <mj-text align="center" font-size="16px" color="#ffffff">
           ¿Que te ha parecido la Newsletter?
         </mj-text>
-          <mj-button align="center" href="https://docs.google.com/forms/..." background-color="#0072CE" color="white" font-size="16px" border-radius="4px">
+          <mj-button align="center" href="https://docs.google.com/forms/d/e/1FAIpQLSf4uMmgoLM8caTjmTLXd6lZT83sCxk3FfjIaPdAvSkmaQOZkw/viewform?usp=header" background-color="#0072CE" color="white" font-size="16px" border-radius="4px">
             Rellena el formulario
           </mj-button>
       </mj-column>
