@@ -68,14 +68,6 @@ El objetivo principal fue motivar a los aficionados a las motos a visitar la fer
 
 ## Diseño
 
-### Estilo Visual
-
-- **Fondo principal:** #1e1e1e (Negro Puro)
-- **Secciones principales:** #111111 (Gris Muy Oscuro)
-- **Títulos y CTA:** #e50914 (Rojo Intenso)
-- **Textos y enlaces:** #bbbbbb (Gris Claro)
-- **Divisores:** #1c1c1c y #000000 (Negros Profundos)
-
 ### Creatividad e Innovación
 
 El diseño del boletín incluye:

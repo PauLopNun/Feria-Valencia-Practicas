@@ -1,5 +1,5 @@
 {
-  "name": "feria-valencia-practicas-local",
+  "name": "feria-valencia-practicas",
   "version": "1.0.0",
   "description": "Proyecto de marketing digital para Feria Valencia",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PauLopNun/Feria-Valencia-Practicas-Local.git"
+    "url": "https://github.com/PauLopNun/Feria-Valencia-Practicas.git"
   },
   "author": "Pau López",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PauLopNun/Feria-Valencia-Practicas-Local/issues"
+    "url": "https://github.com/PauLopNun/Feria-Valencia-Practicas/issues"
   },
-  "homepage": "https://github.com/PauLopNun/Feria-Valencia-Practicas-Local#readme",
+  "homepage": "https://github.com/PauLopNun/Feria-Valencia-Practicas#readme",
   "dependencies": {
     "csv-parser": "^3.0.0",
     "mjml": "^4.15.3",

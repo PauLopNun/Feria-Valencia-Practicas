@@ -34,11 +34,11 @@ El objetivo principal ha sido diseñar boletines informativos para distintos eve
 
 Cada campaña tiene su estilo visual específico, pero todas comparten una coherencia general basada en esta paleta:
 
-- #4F6A44 (Verde Olivo Oscuro) – Fondos intensos  
-- #F1E3C8 (Crema Suave) – Fondos claros, legibilidad  
-- #D79C56 (Naranja Tostado) – Botones y CTA  
-- #3C312E (Marrón Oscuro) – Texto principal  
-- #8B453A / #6D7D8B – Elementos secundarios y divisores  
+- `#4F6A44` (Verde Olivo Oscuro) – Fondos intensos  
+- `#F1E3C8` (Crema Suave) – Fondos claros, legibilidad  
+- `#D79C56` (Naranja Tostado) – Botones y CTA  
+- `#3C312E` (Marrón Oscuro) – Texto principal  
+- `#8B453A` / `#6D7D8B` – Elementos secundarios y divisores  
 
 Además, cada caso adapta esta paleta con tonos propios del evento: rojo y amarillo para cómic, negro y metalizado para motos, verde y crema para Expojove, y azul corporativo para Cevisama.
 
@@ -47,54 +47,38 @@ Además, cada caso adapta esta paleta con tonos propios del evento: rojo y amari
 ## Estructura del Repositorio
 
 ```plaintext
-FERIA-VALENCIA-MJML/
-├── assets/
-├── data/
-├── database/
-│   └── init.sql
-├── docs/
-│   ├── Docker+Node.js+MJML.md
-│   ├── info1.md
-│   ├── info2.md
-│   ├── info3.md
-│   ├── info4.md
+📁 practicas-feria-valencia/
+├── 📁 assets/
+│   └── 📁 images/
+├── 📁 caso-1/
+│   ├── info.md            
+│   └── Newsletter_Salon_Comic_Valencia.mjml         
+├── 📁 caso-2/
+│   ├── info.md             
+│   └── Newsletter_Cevisama.mjml
+├── 📁 caso-3/
+│   ├── info.md              
+│   └── Newsletter_Expojove.mjml
+├── 📁 caso-4/
+│   ├── info.md   
+│   └── Newsletter_Feria_2_Ruedas.mjml
+├── 📁 docs/
 │   ├── memoria-proyecto-feria-valencia-caso1.md
 │   ├── memoria-proyecto-feria-valencia-caso2.md
 │   ├── memoria-proyecto-feria-valencia-caso3.md
 │   └── memoria-proyecto-feria-valencia-caso4.md
-├── src/
-│   ├── index.js
-│   ├── mailer.js
-│   ├── output/
-│   └── templates/
-│       ├── Caso-1/
-│       ├── Caso-2/
-│       ├── Caso-3/
-│       └── Caso-4/
-├── .env.example
-├── .env
-├── .dockerignore
 ├── .gitignore
-├── docker-compose.yml
-├── Dockerfile
-├── package.json
-├── package-lock.json
-├── start.sh
-├── wait-for.sh
-└── tutorial.md
+└── README.md
 ```
-
----
+<!-- añadir docs a la estructura de carpetas -->
 
 ## Tecnologías y Herramientas
 
 - **MJML**: para maquetación responsive  
-- **Node.js**: automatización y generación de boletines  
-- **MySQL**: gestión de suscriptores y almacenamiento  
-- **Nodemailer**: envío de emails de forma automatizada  
-- **GitHub**: control de versiones y documentación  
-- **Docker**: entorno de desarrollo y despliegue  
-- **Mailjet / Outlook**: testing de compatibilidad real  
+- **Outlook**: testing de compatibilidad  
+- **GitHub**: control de versiones y documentación modular  
+- **Mailjet**: pruebas reales de envío  
+
 
 ---
 

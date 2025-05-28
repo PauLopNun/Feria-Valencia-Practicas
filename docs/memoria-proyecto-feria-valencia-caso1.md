@@ -65,15 +65,6 @@ El objetivo era diseñar un boletín informativo atractivo que resaltara las pro
 
 ## Diseño
 
-### Estilo Visual
-
-- **Fondo principal:** #4F6A44 (Verde Olivo Oscuro)
-- **Textos claros:** #F1E3C8 (Crema Suave)
-- **Títulos y CTA:** #D79C56 (Naranja Tostado)
-- **Detalles y divisores:** #6D7D8B (Gris Azulado) y #8B453A (Marrón Cálido)
-- **Fondo secciones oscuras:** #141414 (Negro Profundo)
-- **Texto auxiliar:** #bbbbbb (Gris Claro)
-
 ### Creatividad e Innovación
 
 El diseño emplea:
