@@ -1,6 +1,6 @@
 # 📬 Proyecto Newsletter - Feria Valencia
 
-Este proyecto permite gestionar el envío de newsletters automáticas usando **Node.js**, **MJML**, **MySQL** y **Docker**.
+Este proyecto permite gestionar el envío de newsletters automáticas usando **Node.js**, **MJML**, **MySQL** y **Docker** en local.
 
 ---
 
