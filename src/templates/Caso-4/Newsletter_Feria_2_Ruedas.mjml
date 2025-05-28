@@ -4,6 +4,45 @@
       a {
         color: #bbbbbb;
       }
+
+      /* Media Queries Personalizadas */
+      @media only screen and (max-width: 480px) {
+        .responsive-title {
+          font-size: 18px !important;
+        }
+
+        .responsive-text {
+          font-size: 13px !important;
+          line-height: 20px !important;
+        }
+
+        .responsive-column {
+          width: 100% !important;
+          display: block !important;
+        }
+      }
+
+      @media only screen and (min-width: 481px) and (max-width: 768px) {
+        .responsive-title {
+          font-size: 20px !important;
+        }
+
+        .responsive-text {
+          font-size: 14px !important;
+          line-height: 21px !important;
+        }
+      }
+
+      @media only screen and (min-width: 769px) {
+        .responsive-title {
+          font-size: 22px !important;
+        }
+
+        .responsive-text {
+          font-size: 15px !important;
+          line-height: 22px !important;
+        }
+      }
     </mj-style>
   </mj-head>
 
@@ -27,7 +66,7 @@
 
     <mj-section background-color="#111111" padding="0px">
       <mj-column>
-        <mj-text align="center" font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
+        <mj-text align="center" font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb" css-class="responsive-text">
           Hola <strong>{{nombre}}</strong>, gracias por tu interés en la Feria Dos Ruedas.
         </mj-text>
       </mj-column>
@@ -35,18 +74,18 @@
 
     <mj-section background-color="#111111">
       <mj-column width="100%">
-        <mj-text font-size="20px" line-height="22px" font-weight="bold" padding="0px 25px" color="#e50914">
+        <mj-text font-size="20px" line-height="22px" font-weight="bold" padding="0px 25px" color="#e50914" css-class="responsive-title">
           ¡Bienvenido al boletín oficial de la Feria Dos Ruedas!
         </mj-text>
-        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
+        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb" css-class="responsive-text">
           Explora las novedades, marcas destacadas y ofertas exclusivas que encontrarás en la mayor feria de motos del país.
         </mj-text>
       </mj-column>
       <mj-group width="100%">
-        <mj-column>
+        <mj-column css-class="responsive-column">
           <mj-image border-radius="3%" alt="Moto deportiva" src="https://practicas.feriavalencia.com/wp-content/uploads/2025/05/img1_2ruedas1.jpg" padding="16px" />
         </mj-column>
-        <mj-column>
+        <mj-column css-class="responsive-column">
           <mj-image border-radius="3%" alt="Stand Feria" src="https://practicas.feriavalencia.com/wp-content/uploads/2025/05/img2_2ruedas1.jpg" padding="16px" />
         </mj-column>
       </mj-group>
@@ -61,10 +100,10 @@
 
     <mj-section background-color="#111111">
       <mj-column>
-        <mj-text font-size="22px" color="#e50914" font-family="helvetica" font-weight="bold" align="right">
+        <mj-text font-size="22px" color="#e50914" font-family="helvetica" font-weight="bold" align="right" css-class="responsive-title">
           <singleline>Actividades Destacadas</singleline>
         </mj-text>
-        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb" align="right">
+        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb" align="right" css-class="responsive-text">
           <b>Show de acrobacias:</b> Exhibiciones en vivo de pilotos profesionales.<br />
           <b>Zona test ride:</b> ¡Prueba los últimos modelos de moto!<br />
           <b>Concurso de customización:</b> Participa con tu moto única y gana premios.
@@ -87,10 +126,10 @@
         <mj-image border-radius="3%" alt="Moto deportiva" src="https://practicas.feriavalencia.com/wp-content/uploads/2025/05/img1_2ruedas1.jpg" padding="16px" />
       </mj-column>
       <mj-column>
-        <mj-text font-size="22px" color="#e50914" font-family="helvetica" font-weight="bold" align="left">
+        <mj-text font-size="22px" color="#e50914" font-family="helvetica" font-weight="bold" align="left" css-class="responsive-title">
           <singleline>Ofertas Exclusivas</singleline>
         </mj-text>
-        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb">
+        <mj-text font-size="14px" line-height="22px" font-weight="300" padding="0px 25px" color="#bbbbbb" css-class="responsive-text">
           <ul style="padding-left:18px;">
             <li>10% de descuento en accesorios de primeras marcas.</li>
             <li>Entrada gratuita el viernes con carnet joven.</li>
@@ -139,7 +178,6 @@
       </mj-column>
     </mj-section>
 
-    <!-- Línea divisoria final -->
     <mj-section padding="2px" background-color="#111111">
       <mj-column width="100%">
         <mj-divider border-color="#bbbbbb" border-style="double" border-width="4px" width="100%" padding="0px" />

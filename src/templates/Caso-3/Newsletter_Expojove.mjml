@@ -5,10 +5,45 @@
       <mj-text font-size="16px" color="#333333" line-height="150%" />
       <mj-section padding="0px" />
     </mj-attributes>
+
     <mj-style>
-      @media only screen and (max-width:768px) {
+      /* Media queries personalizadas */
+      @media only screen and (max-width: 768px) {
+        .title {
+          font-size: 20px !important;
+        }
+        .subtitle {
+          font-size: 14px !important;
+        }
+        .cta-text {
+          font-size: 16px !important;
+        }
+        .footer-text {
+          font-size: 10px !important;
+        }
+        .mobile-center {
+          text-align: center !important;
+        }
+        .mobile-padding {
+          padding: 10px !important;
+        }
         .service-img {
           width: 100% !important;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .title {
+          font-size: 18px !important;
+        }
+        .subtitle {
+          font-size: 13px !important;
+        }
+        .cta-text {
+          font-size: 15px !important;
+        }
+        .footer-text {
+          font-size: 9px !important;
         }
       }
     </mj-style>
@@ -23,28 +58,24 @@
     </mj-section>
 
     <!-- Encabezado -->
-
     <mj-section background-color="#00adef" padding="20px">
-
-      <mj-column width ="100%">
-        <mj-text align="center" font-size="24px" color="#ffffff" font-family="Georgia, serif">
+      <mj-column width="100%">
+        <mj-text align="center" css-class="title" font-size="24px" color="#ffffff" font-family="Georgia, serif">
           Expojove 2025 — Servicios para Expositores
         </mj-text>
-        <mj-text align="center" color="#dff6fd" font-size="16px">
+        <mj-text align="center" css-class="subtitle" color="#dff6fd" font-size="16px">
           Accede a todos los recursos disponibles para tu participación
         </mj-text>
       </mj-column>
     </mj-section>
 
     <!-- Espaciado -->
-    <mj-section padding="20px">
-      
-    </mj-section>
+    <mj-section padding="20px"></mj-section>
 
     <!-- Introducción -->
     <mj-section background-color="#fdd900" padding="20px">
       <mj-column>
-        <mj-text font-size="18px" font-family="Georgia, serif" color="#333333">
+        <mj-text css-class="mobile-center" font-size="18px" font-family="Georgia, serif" color="#333333">
           Estimado/a {{nombre}}, bienvenido/a a Expojove
         </mj-text>
         <mj-text>
@@ -55,12 +86,11 @@
 
     <!-- Servicios -->
     <mj-section background-color="#ffffff" padding="20px">
-      <!-- Opcion de 2 fotos https://www.bandomovil.com/userFiles/0S/0SVqYEXPOJOVE.jpg -->
       <mj-column width="40%">
-        <mj-image padding="5px"  border-radius = "2%" src="https://firagirona.com/wp-content/uploads/2024/12/Cartell-expojove-2025-scaled.gif" fluid-on-mobile="true" />
+        <mj-image css-class="service-img" padding="5px" border-radius="2%" src="https://firagirona.com/wp-content/uploads/2024/12/Cartell-expojove-2025-scaled.gif" fluid-on-mobile="true" />
       </mj-column>
       <mj-column>
-        <mj-text align= "center" font-size="18px" font-family="Georgia, serif" color="#ec008c">
+        <mj-text align="center" font-size="18px" font-family="Georgia, serif" color="#ec008c">
           Servicios disponibles
         </mj-text>
         <mj-text>
@@ -76,20 +106,15 @@
     </mj-section>
 
     <!-- Espaciado -->
-    </mj-section>
-
-     
-    <mj-section padding="1px">
-      
-    </mj-section>
+    <mj-section padding="1px"></mj-section>
 
     <!-- Llamada a la acción -->
     <mj-section background-color="#00adef" padding="20px">
       <mj-column>
-        <mj-text align="center" color="#ffffff" font-size="20px">
+        <mj-text align="center" css-class="cta-text" color="#ffffff" font-size="20px">
           Solicita tus servicios antes del {{tiempo_respuesta}}, {{empresa}}.
         </mj-text>
-        <mj-text align="center" color="#dff6fd">
+        <mj-text align="center" css-class="subtitle" color="#dff6fd">
           Accede al formulario de solicitud para confirmar tus necesidades y garantizar tu preparación.
         </mj-text>
         <mj-button href="https://feriavalencia.com/expositores-expojove-servicios" background-color="#ec008c" color="#ffffff">
@@ -101,10 +126,7 @@
     <!-- Imagen secundaria -->
     <mj-section background-color="#ffffff" padding="40px">
       <mj-column width="100%">
-      <!--https://practicas.feriavalencia.com/wp-content/uploads/2025/05/newsexpo1.png posible imagen extra -->
-      </mj-column>
-      <mj-column width="100%">
-        <mj-image border-radius = "2%" src="https://practicas.feriavalencia.com/wp-content/uploads/2025/05/newsexpo1.png" fluid-on-mobile="true" />
+        <mj-image border-radius="2%" src="https://practicas.feriavalencia.com/wp-content/uploads/2025/05/newsexpo1.png" fluid-on-mobile="true" />
       </mj-column>
     </mj-section>
 
@@ -124,7 +146,7 @@
     <!-- Footer -->
     <mj-section background-color="#fdd900" padding="20px">
       <mj-column>
-        <mj-text font-size="12px" color="#333333" align="center">
+        <mj-text css-class="footer-text" font-size="12px" color="#333333" align="center">
           © 2025 Expojove · Feria Valencia · Todos los derechos reservados<br />
           Si no deseas recibir más correos, <a href="https://feriavalencia.com/unsubscribe" style="color:#333333;">haz clic aquí</a>
         </mj-text>

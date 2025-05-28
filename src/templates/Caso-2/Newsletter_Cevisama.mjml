@@ -6,6 +6,7 @@
       <mj-section padding="0" />
       <mj-column padding="0" />
     </mj-attributes>
+
     <mj-style inline="inline">
       a { color: #bbbbbb; }
       .cta-button {
@@ -17,13 +18,46 @@
         display: inline-block;
         font-weight: bold;
       }
+
+      @media only screen and (max-width: 480px) {
+        .cta-button {
+          font-size: 14px !important;
+          padding: 10px 20px !important;
+        }
+        .mobile-center {
+          text-align: center !important;
+        }
+        .mobile-text {
+          font-size: 14px !important;
+        }
+        .mobile-hide {
+          display: none !important;
+          width: 0 !important;
+          height: 0 !important;
+          overflow: hidden !important;
+        }
+      }
+
+      @media only screen and (min-width: 481px) and (max-width: 768px) {
+        .cta-button {
+          font-size: 15px !important;
+          padding: 11px 22px !important;
+        }
+        .tablet-text {
+          font-size: 15px !important;
+        }
+      }
+
+      @media only screen and (min-width: 769px) {
+        .desktop-text {
+          font-size: 16px !important;
+        }
+      }
     </mj-style>
   </mj-head>
-  
-  <mj-body background-color="#1A1A1A">
 
-    <mj-section padding ="20px">
-    </mj-section>
+  <mj-body background-color="#1A1A1A">
+    <mj-section padding="20px"></mj-section>
 
     <!-- Header -->
     <mj-section background-color="#0F0F0F" padding="20px 0">
@@ -32,17 +66,17 @@
       </mj-column>
     </mj-section>
 
-    <!-- Intro con impacto -->
+    <!-- Intro -->
     <mj-section background-color="#1F1F1F" padding="40px 20px">
       <mj-column>
-        <mj-text align= "center" font-size="22px" font-weight="bold" color="#ffffff">✨ ¡Cevisama 2025 te espera, {{nombre_contacto}}! ✨</mj-text>
+        <mj-text align="center" font-size="22px" font-weight="bold" color="#ffffff">✨ ¡Cevisama 2025 te espera, {{nombre_contacto}}! ✨</mj-text>
         <mj-text color="#cccccc">
           Esta edición será más internacional, más innovadora y más estratégica para empresas como <strong>{{empresa}}</strong>. No te lo puedes perder.
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Franja colorida con mensaje -->
+    <!-- Franja colorida -->
     <mj-section background-color="#141414" padding="30px 0">
       <mj-column>
         <mj-text font-size="18px" font-weight="bold" color="#ffffff" align="center">
@@ -51,7 +85,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- Beneficios destacados -->
+    <!-- Beneficios -->
     <mj-section background-color="#1F1F1F" padding="30px 20px">
       <mj-column>
         <mj-text font-size="18px" font-weight="bold" color="#ffffff">¿Por qué exponer en Cevisama 2025?</mj-text>
@@ -74,7 +108,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- CTA fuerte -->
+    <!-- CTA -->
     <mj-section background-color="#0F0F0F" padding="30px 20px">
       <mj-column>
         <mj-text font-size="18px" font-weight="bold" color="#ffffff" align="center">
@@ -106,6 +140,5 @@
         <mj-divider border-color="#333333" border-width="1px" />
       </mj-column>
     </mj-section>
-
   </mj-body>
 </mjml>
