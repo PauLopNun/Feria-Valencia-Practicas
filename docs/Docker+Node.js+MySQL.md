@@ -128,6 +128,7 @@ Revisar los logs del contenedor Node.js:
 docker logs feria-node
 ```
 
+
 Mensaje esperado:
 
 ```bash
