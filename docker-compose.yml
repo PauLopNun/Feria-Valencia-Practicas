@@ -4,31 +4,37 @@ services:
     container_name: mysql-db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_ROOT_PASSWORD: feriavalencia
       MYSQL_DATABASE: newsletter
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
+      MYSQL_USER: feriavalencia
+      MYSQL_PASSWORD: feriavalencia
     ports:
       - "3307:3306"
     volumes:
       - mysql-data:/var/lib/mysql
       - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-prootpassword"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   node-app:
     build: .
     container_name: feria-node
     restart: always
     depends_on:
-      - mysql-db
+      mysql-db:
+        condition: service_healthy
     volumes:
       - .:/app
       - /app/node_modules
-      - ./data:/app/data  # si tu CSV está en /data
+      - ./data:/app/data
     working_dir: /app
     ports:
       - "3000:3000"
     env_file:
-      - .env  # cargamos variables desde aquí
+      - .env
 
 volumes:
   mysql-data:
