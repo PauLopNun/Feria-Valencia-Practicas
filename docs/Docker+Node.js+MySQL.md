@@ -154,3 +154,6 @@ Pueden abrirse en el navegador. La base de datos MySQL almacena los newsletters 
 - Crear una API REST para facilitar el acceso y gestión de newsletters.
 - Implementar pruebas automáticas para validar la generación y almacenamiento.
 - Documentar la estructura de la base de datos y el formato de las plantillas MJML.
+
+
+- version 1.0
