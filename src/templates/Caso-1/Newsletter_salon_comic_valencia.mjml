@@ -100,7 +100,7 @@
     <!-- SECCIÓN CON CARTEL DEL EVENTO -->
     <mj-section background-color="#141414">
       <mj-column width="50%">
-          <mj-image src="http://localhost:3000/images/cartelprincialcomic.jpg"/>
+        <mj-image src="http://localhost:3000/images/cartelprincialcomic.jpg"/>
       </mj-column>
     </mj-section>
 
