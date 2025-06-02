@@ -14,7 +14,7 @@
 
     <mj-section padding="15px 0 0 0">
       <mj-column width="40%">
-        <mj-image alt="Feature image" align="center" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/logo_salon_comic.jpg?raw=true" padding="16px" />
+        <mj-image alt="Feature image" align="center" src="http://localhost:3000/images/logo_salon_comic.jpg" padding="16px" />
       </mj-column>
 
     </mj-section>
@@ -41,7 +41,7 @@
 
     <mj-section background-color="#141414">
       <mj-column width="50%">
-        <mj-image align="center" alt="Imagen 2" src="https://www.saloncomicvalencia.com/wp-content/uploads/2024/12/CARTEL_XIANNUSTUDIO_2025-1-724x1024.jpg" padding="16px" fluid-on-mobile="true" />
+        <mj-image align="center" alt="Imagen 2" src="http://localhost:3000/images/cartelprincialcomic.jpg" padding="16px" fluid-on-mobile="true" />
       </mj-column>
     </mj-section>
 
@@ -65,7 +65,7 @@
         </mj-text>
       </mj-column>
       <mj-column>
-        <mj-image alt="Feature image" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/feria_valencia_banner.jpeg?raw=true" />
+        <mj-image alt="Feature image" src="http://localhost:3000/images/feria_valencia_banner.jpeg" />
       </mj-column>
     </mj-section>
 
@@ -79,7 +79,7 @@
     <!-- PROMOCIONES ESPECIALES -->
     <mj-section background-color="#141414">
       <mj-column>
-        <mj-image alt="Feature image" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/cabecera_salon_comic.jpg?raw=true" />
+        <mj-image alt="Feature image" src="http://localhost:3000/images/cabecera_salon_comic.jpg" />
       </mj-column>
       <mj-column>
         <mj-text font-size="22px" color="#bcc" font-family="helvetica" font-weight="bold" align="left">
