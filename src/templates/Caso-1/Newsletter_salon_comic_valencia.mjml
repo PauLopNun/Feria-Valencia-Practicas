@@ -75,7 +75,7 @@
         <mj-image
           alt="Feature image"
           align="center"
-          src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/logo_salon_comic.jpg?raw=true"
+          src="http://localhost:3000/images/logo_salon_comic.jpg"
           css-class="image-padding"
         />
       </mj-column>
@@ -108,7 +108,7 @@
         <mj-image
           align="center"
           alt="Cartel evento"
-          src="https://www.saloncomicvalencia.com/wp-content/uploads/2024/12/CARTEL_XIANNUSTUDIO_2025-1-724x1024.jpg"
+          src="http://localhost:3000/images/cartelprincialcomic.jpg"
           css-class="image-padding"
           fluid-on-mobile="true"
         />
@@ -139,7 +139,7 @@
 
       <!-- Columna de imagen decorativa -->
       <mj-column>
-        <mj-image alt="Feature image" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/feria_valencia_banner.jpeg?raw=true" />
+        <mj-image alt="Feature image" src="http://localhost:3000/images/feria_valencia_banner.jpeg" />
       </mj-column>
     </mj-section>
 
@@ -155,7 +155,7 @@
     <mj-section background-color="#141414">
       <!-- Columna de imagen -->
       <mj-column>
-        <mj-image alt="Imagen promociones" src="https://github.com/PauLopNun/Feria-Valencia-Practicas/blob/master/assets/images/cabecera_salon_comic.jpg?raw=true" />
+        <mj-image alt="Imagen promociones" src="http://localhost:3000/images/salon_comic_2.jpg" />
       </mj-column>
 
       <!-- Columna de texto -->
