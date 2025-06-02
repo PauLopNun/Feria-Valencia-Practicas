@@ -108,7 +108,7 @@
         <mj-image
           align="center"
           alt="Cartel evento"
-          <mj-image src=src="http://localhost:3000/images/cartelprincialcomic.jpg"/>
+          <mj-image src="http://localhost:3000/images/cartelprincialcomic.jpg"/>
           css-class="image-padding"
           fluid-on-mobile="true"
         />
