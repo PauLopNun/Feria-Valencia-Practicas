@@ -75,7 +75,7 @@
         <mj-image
           alt="Feature image"
           align="center"
-          src="http://localhost:3000/images/logo_salon_comic.jpg"
+          <mj-image src="http://localhost:3000/images/logo_salon_comic.jpg"/>
           css-class="image-padding"
         />
       </mj-column>
@@ -108,7 +108,7 @@
         <mj-image
           align="center"
           alt="Cartel evento"
-          src="http://localhost:3000/images/cartelprincialcomic.jpg"
+          <mj-image src=src="http://localhost:3000/images/cartelprincialcomic.jpg"/>
           css-class="image-padding"
           fluid-on-mobile="true"
         />
