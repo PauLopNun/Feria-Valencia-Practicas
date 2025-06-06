@@ -40,7 +40,7 @@
     </mj-section>
 
     <mj-section background-color="#141414">
-      <mj-column width="50%">
+      <mj-column width="80%">
         <mj-image src="http://localhost:3000/images/cartelprincialcomic.jpg" padding="16px" fluid-on-mobile="true" />
       </mj-column>
     </mj-section>
