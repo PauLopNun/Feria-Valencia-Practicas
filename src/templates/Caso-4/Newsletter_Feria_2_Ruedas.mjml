@@ -73,20 +73,20 @@
     <!-- Sección principal con título y descripción -->
     <mj-section background-color="#111111">
       <mj-column width="100%">
-        <mj-text font-size="20px" font-weight="bold" padding="0px 25px" color="#e50914" css-class="responsive-title">
+        <mj-text font-size="20px" font-weight="bold" padding="20px 25px" color="#e50914" css-class="responsive-title">
           ¡Bienvenido al boletín oficial de la Feria Dos Ruedas!
         </mj-text>
-        <mj-text font-size="14px" font-weight="300" padding="0px 25px" color="#bbbbbb" css-class="responsive-text">
+        <mj-text font-size="14px" font-weight="300" padding="15px 25px" color="#bbbbbb" css-class="responsive-text">
           Explora las novedades, marcas destacadas y ofertas exclusivas que encontrarás en la mayor feria de motos del país.
         </mj-text>
       </mj-column>
 
       <!-- Grupo de imágenes lado a lado -->
       <mj-group width="100%">
-        <mj-column css-class="responsive-column">
+        <mj-column padding="15px" css-class="responsive-column">
           <mj-image border-radius="3%" alt="Moto deportiva" src="http://localhost:3000/images/img1_2ruedas1.jpg" padding="16px" />
         </mj-column>
-        <mj-column css-class="responsive-column">
+        <mj-column padding="15px" css-class="responsive-column">
           <mj-image border-radius="3%" alt="Stand Feria" src="http://localhost:3000/images/img2_2ruedas1.jpg" padding="16px" />
         </mj-column>
       </mj-group>
@@ -128,7 +128,7 @@
     <!-- Ofertas exclusivas -->
     <mj-section background-color="#111111">
       <mj-column>
-        <mj-image border-radius="3%" alt="Moto deportiva" src="https://practicas.feriavalencia.com/wp-content/uploads/2025/05/img1_2ruedas1.jpg" padding="16px" />
+        <mj-image border-radius="3%" alt="Moto deportiva" src="http://localhost:3000/images/feriadosruedas4.jpg" padding="16px" />
       </mj-column>
       <mj-column>
         <mj-text font-size="22px" color="#e50914" font-weight="bold" align="left" css-class="responsive-title">

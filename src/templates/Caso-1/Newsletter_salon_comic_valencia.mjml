@@ -72,7 +72,7 @@
     <!-- LOGO DEL EVENTO -->
     <mj-section padding="15px 0 0 0">
       <mj-column width="40%">
-          <mj-image src="http://localhost:3000/images/logo_salon_comic.jpg"/>
+          <mj-image src="http://localhost:3000/images/logo_salon_comic.png"/>
       </mj-column>
     </mj-section>
 
@@ -86,7 +86,7 @@
     </mj-section>
 
     <!-- SECCIÓN PRINCIPAL: Título y Divider -->
-    <mj-section background-color="#141414" padding="35px 0 0 0">
+    <mj-section background-color="#141414" padding="25px 0 0 0">
       <mj-column>
         <mj-text font-size="14px" line-height="22px" font-weight="bold" align="center" color="#bbbbbb">
           <span style="text-transform: uppercase;">
@@ -99,7 +99,7 @@
 
     <!-- SECCIÓN CON CARTEL DEL EVENTO -->
     <mj-section background-color="#141414">
-      <mj-column width="50%">
+      <mj-column padding= "20px" width="100%">
         <mj-image src="http://localhost:3000/images/cartelprincialcomic.jpg"/>
       </mj-column>
     </mj-section>
