@@ -100,6 +100,10 @@ async function init() {
   }
 }
 
+/*Está bien tener las imágenes en express pero si lo vas a ejecutar en local
+hay que tener en cuenta que cuando se manden los correos no cargaran, tendras 
+que usar rutas de imágenes de tu propio path del src*/
+
 app.use(express.static(path.join(__dirname, 'output')));
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
