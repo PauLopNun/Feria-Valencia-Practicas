@@ -2,49 +2,71 @@
 
 ![Feria_De_Muestras](https://cdn1.valenciaciudaddelrunning.com/wp-content/uploads/2023/07/foto-principal-scaled.jpg)
 
----
-
-¡Hola! Soy Pau, y este es el repositorio donde he documentado mi trabajo individual con **MJML**, un framework potente para crear emails responsive. A lo largo de estas prácticas, he diseñado campañas de email marketing orientadas a eventos reales de **Feria Valencia**, aplicando tanto conocimientos técnicos como creatividad visual para resolver retos comunicativos específicos.
-
----
-
-## Objetivo del Proyecto
-
-El objetivo principal ha sido diseñar boletines informativos para distintos eventos, aplicando MJML de forma avanzada. Cada caso parte de una necesidad realista de comunicación digital: desde informar hasta motivar la inscripción o compra de entradas. Todo ello con un enfoque responsive, accesible y visualmente atractivo.
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![MJML](https://img.shields.io/badge/MJML-FD652F?style=flat&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+![Responsive Design](https://img.shields.io/badge/Responsive--Design-0088CC?style=flat&logo=google-chrome&logoColor=white)
 
 ---
 
-## Casos Prácticos Desarrollados
+¡Hola! Soy **Pau**, y este es el repositorio donde he documentado mi trabajo con **MJML**, un framework potente para crear emails responsive.  
+A lo largo de estas prácticas, he diseñado campañas de email marketing orientadas a eventos reales de **Feria Valencia**, aplicando tanto conocimientos técnicos como creatividad visual para resolver retos comunicativos específicos.
 
-### 1. Salón del Cómic de València
+---
+
+## 📌 Índice
+
+- [🎯 Objetivo del Proyecto](#objetivo-del-proyecto)
+- [📬 Casos Prácticos](#casos-prácticos-desarrollados)
+- [🎨 Estética y Paleta](#estética-y-paleta-de-colores)
+- [🗂️ Estructura del Repositorio](#estructura-del-repositorio)
+- [🛠️ Tecnologías y Herramientas](#tecnologías-y-herramientas)
+- [▶️ Cómo Ejecutar el Proyecto](#️cómo-ejecutar-el-proyecto)
+- [🙏 Agradecimientos](#agradecimientos)
+- [📫 Contacto](#contacto)
+
+---
+
+## 🎯 Objetivo del Proyecto
+
+Diseñar boletines informativos realistas para distintos eventos de **Feria Valencia**, aplicando MJML de forma avanzada con un enfoque responsive, accesible y visualmente atractivo.
+
+---
+
+## 📬 Casos Prácticos Desarrollados
+
+### 🔹 Salón del Cómic de València
 > Campaña dirigida a un público joven, familiar y geek. El email utiliza una estética tipo cómic, con viñetas, gifs y botones llamativos. Se enfoca en resaltar preventas, actividades especiales y contenido visualmente compartible.
 
-### 2. Feria Dos Ruedas
+### 🔹 Feria Dos Ruedas
 > Correo orientado a aficionados al motociclismo. Se promociona un sorteo de entradas para el GP de Cheste con una estética de competición: colores intensos, cuenta regresiva animada y CTA directo para motivar la inscripción.
 
-### 3. Expojove – Servicios para Expositores
-> Comunicación dirigida a los expositores de Expojove. El mensaje informa de forma clara y profesional sobre los servicios disponibles durante el evento (electricidad, limpieza, seguridad, mobiliario, etc.) y cómo solicitarlos. Se prioriza la legibilidad, estructura clara y botones para acceder a formularios y fechas límite.
+### 🔹 Expojove – Servicios para Expositores
+> Comunicación profesional para informar sobre servicios durante el evento (electricidad, limpieza, seguridad, etc.). Se prioriza la legibilidad, estructura clara y botones directos a formularios.
 
-### 4. Cevisama – Comunicación a Expositores
-> Comunicación profesional B2B dirigida a empresas expositoras. El diseño sobrio y corporativo comunica novedades en internacionalización, beneficios de participación y fidelización de marcas del sector cerámico y de baño.
-
----
-
-## Estética y Paleta de Colores
-
-Cada campaña tiene su estilo visual específico, pero todas comparten una coherencia general basada en esta paleta:
-
-- #4F6A44 (Verde Olivo Oscuro) – Fondos intensos  
-- #F1E3C8 (Crema Suave) – Fondos claros, legibilidad  
-- #D79C56 (Naranja Tostado) – Botones y CTA  
-- #3C312E (Marrón Oscuro) – Texto principal  
-- #8B453A / #6D7D8B – Elementos secundarios y divisores  
-
-Además, cada caso adapta esta paleta con tonos propios del evento: rojo y amarillo para cómic, negro y metalizado para motos, verde y crema para Expojove, y azul corporativo para Cevisama.
+### 🔹 Cevisama – Comunicación a Expositores
+> Comunicación B2B corporativa con novedades en internacionalización y fidelización. Diseño sobrio para empresas del sector cerámico y de baño.
 
 ---
 
-## Estructura del Repositorio
+## 🎨 Estética y Paleta de Colores
+
+Aunque cada campaña tiene un estilo visual único, todas comparten una coherencia general basada en esta paleta:
+
+| Color               | Uso                              |
+|--------------------|-----------------------------------|
+| `#4F6A44`           | Verde olivo – Fondos intensos     |
+| `#F1E3C8`           | Crema suave – Legibilidad         |
+| `#D79C56`           | Naranja tostado – Botones / CTA   |
+| `#3C312E`           | Marrón oscuro – Texto principal   |
+| `#8B453A` / `#6D7D8B` | Elementos secundarios y divisores |
+
+Cada campaña adapta estos tonos con colores adicionales: rojo y amarillo (cómic), negro y metálico (motos), verde institucional (expojove), y azul corporativo (cevisama).
+
+---
+
+## 🗂️ Estructura del Repositorio
 
 ```plaintext
 FERIA-VALENCIA-MJML/
@@ -54,14 +76,8 @@ FERIA-VALENCIA-MJML/
 │   └── init.sql
 ├── docs/
 │   ├── Docker+Node.js+MJML.md
-│   ├── info1.md
-│   ├── info2.md
-│   ├── info3.md
-│   ├── info4.md
-│   ├── memoria-proyecto-feria-valencia-caso1.md
-│   ├── memoria-proyecto-feria-valencia-caso2.md
-│   ├── memoria-proyecto-feria-valencia-caso3.md
-│   └── memoria-proyecto-feria-valencia-caso4.md
+│   ├── info1.md ... info4.md
+│   └── memorias por caso
 ├── src/
 │   ├── index.js
 │   ├── mailer.js
@@ -72,40 +88,61 @@ FERIA-VALENCIA-MJML/
 │       ├── Caso-3/
 │       └── Caso-4/
 ├── .env.example
-├── .env
-├── .dockerignore
-├── .gitignore
-├── docker-compose.yml
-├── Dockerfile
-├── package.json
-├── package-lock.json
-├── start.sh
-├── wait-for.sh
+├── .dockerignore / .gitignore
+├── docker-compose.yml / Dockerfile
+├── package.json / package-lock.json
 └── tutorial.md
 ```
 
 ---
 
-## Tecnologías y Herramientas
+## 🛠️ Tecnologías y Herramientas
 
-- **MJML**: para maquetación responsive  
-- **Node.js**: automatización y generación de boletines  
-- **MySQL**: gestión de suscriptores y almacenamiento  
-- **Nodemailer**: envío de emails de forma automatizada  
-- **GitHub**: control de versiones y documentación  
-- **Docker**: entorno de desarrollo y despliegue  
-- **Mailjet / Outlook**: testing de compatibilidad real  
-
----
-
-## Agradecimientos
-
-Gracias a **Feria Valencia** por ofrecer estos contextos reales y al profesorado del **IES La Sénia** por fomentar un aprendizaje basado en retos.  
-Este proyecto me ha permitido aplicar el diseño responsive en un entorno profesional, realista y desafiante.
+- **MJML** → Maquetación responsive para emails  
+- **Node.js + Express** → Backend y automatización  
+- **PostgreSQL** → Gestión de suscriptores y almacenaje  
+- **Nodemailer** → Envío automático de emails  
+- **Docker** → Entorno de desarrollo reproducible  
+- **GitHub** → Control de versiones y documentación  
+- **Outlook / Mailjet** → Testing de compatibilidad real
 
 ---
 
-**¡Gracias por visitar mi repositorio!**  
-Si tienes sugerencias o preguntas, no dudes en abrir un issue o contactarme.
+## ▶️ Cómo Ejecutar el Proyecto
 
-- version 1.0
+1. Clona este repositorio
+
+```bash
+git clone https://github.com/paulopnun/Newsletter-Automatizada-Local
+cd Newsletter-Automatizada-Local
+```
+
+2. Crea un archivo `.env` a partir de `.env.example` con tus credenciales
+
+3. Lanza el entorno Dockerizado
+
+```bash
+docker-compose up --build
+```
+
+4. Abre `http://localhost:3000` para previsualizar las newsletters generadas.
+
+---
+
+## 🙏 Agradecimientos
+
+Gracias a **Feria Valencia** por aportar contextos realistas y al profesorado del **IES La Sénia** por fomentar un aprendizaje basado en retos.  
+Este proyecto me ha permitido aplicar diseño responsive y automatización en un entorno profesional, realista y desafiante.
+
+---
+
+## 📫 Contacto
+
+**Pau López Núñez**  
+[📧 paulopnun@gmail.com](mailto:paulopnun@gmail.com)  
+[🔗 GitHub](https://github.com/paulopnun) • [🔗 LinkedIn](https://www.linkedin.com/in/paulopnun)
+
+---
+
+**¡Gracias por visitar este repositorio!**  
+Si tienes sugerencias o quieres colaborar, ¡no dudes en abrir un issue o contactarme!
