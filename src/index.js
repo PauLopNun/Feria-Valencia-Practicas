@@ -21,6 +21,21 @@ const pool = mysql.createPool({
   queueLimit: 0
 });
 
+// Función con reintentos para conectar a MySQL
+async function conectarConReintentos(reintentos = 10, espera = 2000) {
+  for (let i = 0; i < reintentos; i++) {
+    try {
+      const conn = await pool.getConnection();
+      console.log('✅ Conectado a MySQL');
+      return conn;
+    } catch (error) {
+      console.log(`⏳ Esperando conexión a MySQL... (${i + 1}/${reintentos})`);
+      await new Promise(res => setTimeout(res, espera));
+    }
+  }
+  throw new Error('❌ No se pudo conectar a MySQL después de varios intentos');
+}
+
 async function init() {
   try {
     const conn = await pool.getConnection();
