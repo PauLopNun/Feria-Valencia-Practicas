@@ -1,7 +1,5 @@
 # Prácticas de MJML – Feria Valencia
 
-![Feria_De_Muestras](https://cdn1.valenciaciudaddelrunning.com/wp-content/uploads/2023/07/foto-principal-scaled.jpg)
-
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![MJML](https://img.shields.io/badge/MJML-FD652F?style=flat&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
