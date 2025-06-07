@@ -56,6 +56,7 @@ docker-compose down --volumes --remove-orphans
 docker-compose build --no-cache
 docker-compose up
 ```
+##### Si algo falla al principio, vuelve a ejecutar el comando docker-compose up, pasa si el contenedor feria-node intenta conectarse a la base de datos MySQL antes de que esta este completamente lista para aceptar conexiones. 
 
 ---
 
