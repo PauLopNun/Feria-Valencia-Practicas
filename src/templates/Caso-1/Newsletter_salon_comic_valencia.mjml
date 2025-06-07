@@ -72,7 +72,7 @@
     <!-- LOGO DEL EVENTO -->
     <mj-section padding="15px 0 0 0">
       <mj-column width="40%">
-          <mj-image src="https://imgur.com/gallery/local-project-newsletter-9lCpABc#yancIma"/>
+          <mj-image src="https://i.imgur.com/yancIma.png"/>
       </mj-column>
     </mj-section>
 
@@ -100,7 +100,7 @@
     <!-- SECCIÓN CON CARTEL DEL EVENTO -->
     <mj-section background-color="#141414">
       <mj-column padding= "20px" width="100%">
-        <mj-image src="https://imgur.com/gallery/local-project-newsletter-9lCpABc#RYkvb1Z"/>
+        <mj-image src="https://i.imgur.com/RYkvb1Z.jpeg"/>
       </mj-column>
     </mj-section>
 
@@ -128,7 +128,7 @@
 
       <!-- Columna de imagen decorativa -->
       <mj-column>
-        <mj-image src="https://imgur.com/gallery/local-project-newsletter-9lCpABc#w9A3Apw" />
+        <mj-image src="https://i.imgur.com/w9A3Apw.jpeg" />
       </mj-column>
     </mj-section>
 
@@ -144,7 +144,7 @@
     <mj-section background-color="#141414">
       <!-- Columna de imagen -->
       <mj-column>
-        <mj-image src="https://imgur.com/gallery/local-project-newsletter-9lCpABc#c9jtIeo" />
+        <mj-image src="https://i.imgur.com/c9jtIeo.jpeg" />
       </mj-column>
 
       <!-- Columna de texto -->
