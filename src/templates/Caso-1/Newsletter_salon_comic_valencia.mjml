@@ -72,7 +72,7 @@
     <!-- LOGO DEL EVENTO -->
     <mj-section padding="15px 0 0 0">
       <mj-column width="40%">
-          <mj-image src="http://localhost:3000/images/logo_salon_comic.png"/>
+          <mj-image src="https://imgur.com/yancIma"/>
       </mj-column>
     </mj-section>
 
@@ -100,7 +100,7 @@
     <!-- SECCIÓN CON CARTEL DEL EVENTO -->
     <mj-section background-color="#141414">
       <mj-column padding= "20px" width="100%">
-        <mj-image src="http://localhost:3000/images/cartelprincialcomic.jpg"/>
+        <mj-image src="https://imgur.com/RYkvb1Z"/>
       </mj-column>
     </mj-section>
 
@@ -128,7 +128,7 @@
 
       <!-- Columna de imagen decorativa -->
       <mj-column>
-        <mj-image src="http://localhost:3000/images/feria_valencia_banner.jpeg" />
+        <mj-image src="https://imgur.com/w9A3Apw" />
       </mj-column>
     </mj-section>
 
@@ -144,7 +144,7 @@
     <mj-section background-color="#141414">
       <!-- Columna de imagen -->
       <mj-column>
-        <mj-image src="http://localhost:3000/images/salon_comic_2.jpg" />
+        <mj-image src="https://imgur.com/c9jtIeo" />
       </mj-column>
 
       <!-- Columna de texto -->
