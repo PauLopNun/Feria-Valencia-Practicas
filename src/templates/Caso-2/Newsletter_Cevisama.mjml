@@ -65,7 +65,7 @@
     <!-- HEADER: logotipo Cevisama -->
     <mj-section padding="20px 0">
       <mj-column>
-        <mj-image src="https://imgur.com/PJMv8oM" width="200px" />
+        <mj-image src="https://imgur.com/gallery/local-project-newsletter-9lCpABc#PJMv8oM" width="200px" />
       </mj-column>
     </mj-section>
 
@@ -88,7 +88,7 @@
         </mj-text>
       </mj-column>
       <mj-column>
-        <mj-image border-radius="10px" src="https://imgur.com/CKwLKJW" />
+        <mj-image border-radius="10px" src="https://imgur.com/gallery/local-project-newsletter-9lCpABc#CKwLKJW" />
       </mj-column>
     </mj-section>
 
@@ -108,7 +108,7 @@
     <!-- IMAGEN ILUSTRATIVA con datos de participación -->
     <mj-section background-color="#1F1F1F" padding="20px">
       <mj-column width="95%">
-        <mj-image border-radius="6px" src="https://imgur.com/DvZRDuN" />
+        <mj-image border-radius="6px" src="https://imgur.com/gallery/local-project-newsletter-9lCpABc#DvZRDuN" />
         <mj-text align="center" font-size="14px" color="#aaaaaa">
           Más de 90 países representados en la última edición.
         </mj-text>

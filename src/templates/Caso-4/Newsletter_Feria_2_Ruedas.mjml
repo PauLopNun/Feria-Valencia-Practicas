@@ -47,7 +47,7 @@
     <!-- LOGO -->
     <mj-section>
       <mj-column>
-        <mj-image alt="Logo Feria Dos Ruedas" src="https://imgur.com/xxftBpe" width="80px" padding="16px" />
+        <mj-image alt="Logo Feria Dos Ruedas" src="https://imgur.com/gallery/local-project-newsletter-9lCpABc#xxftBpe" width="80px" padding="16px" />
       </mj-column>
     </mj-section>
 
@@ -84,10 +84,10 @@
       <!-- Grupo de imágenes lado a lado -->
       <mj-group width="100%">
         <mj-column padding="15px" css-class="responsive-column">
-          <mj-image border-radius="3%" alt="Moto deportiva" src="https://imgur.com/Ck1z3Mv" padding="16px" />
+          <mj-image border-radius="3%" alt="Moto deportiva" src="https://imgur.com/gallery/local-project-newsletter-9lCpABc#w3aWvCa" padding="16px" />
         </mj-column>
         <mj-column padding="15px" css-class="responsive-column">
-          <mj-image border-radius="3%" alt="Stand Feria" src="https://imgur.com/w3aWvCa" padding="16px" />
+          <mj-image border-radius="3%" alt="Stand Feria" src="https://imgur.com/gallery/local-project-newsletter-9lCpABc#Ck1z3Mv" padding="16px" />
         </mj-column>
       </mj-group>
     </mj-section>
@@ -113,7 +113,7 @@
         </mj-text>
       </mj-column>
       <mj-column>
-        <mj-image border-radius="3%" alt="Stand Feria" src="https://imgur.com/DsR6RLJ" padding="16px" />
+        <mj-image border-radius="3%" alt="Stand Feria" src="https://imgur.com/gallery/local-project-newsletter-9lCpABc#DsR6RLJ" padding="16px" />
       </mj-column>
     </mj-section>
 
@@ -128,7 +128,7 @@
     <!-- Ofertas exclusivas -->
     <mj-section background-color="#111111">
       <mj-column>
-        <mj-image border-radius="3%" alt="Moto deportiva" src="https://imgur.com/AyFDQnM" padding="16px" />
+        <mj-image border-radius="3%" alt="Moto deportiva" src="https://imgur.com/gallery/local-project-newsletter-9lCpABc#AyFDQnM" padding="16px" />
       </mj-column>
       <mj-column>
         <mj-text font-size="22px" color="#e50914" font-weight="bold" align="left" css-class="responsive-title">
