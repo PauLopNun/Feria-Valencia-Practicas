@@ -47,6 +47,8 @@ GMAIL_PASS=tu_contraseña_de_aplicacion
 
 ### 4. 🧱 Ejecuta Docker
 
+##### Ojo con que el start.sh este en formato LF !
+
 Desde la terminal (estando en el directorio del proyecto), ejecuta los siguientes comandos:
 
 ```bash
